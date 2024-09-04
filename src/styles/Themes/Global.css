@@ -1,0 +1,26 @@
+body {
+  font-family: Poppins;
+  width: 100%;
+  background: #00325d;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}

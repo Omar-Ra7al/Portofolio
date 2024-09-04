@@ -1,0 +1,14 @@
+.icon {
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+  transform: rotate(270deg);
+}
+
+.icon-light {
+  fill: #ffff00; /* Yellow */
+}
+
+.icon-dark {
+  fill: #3b82f6; /* Black */
+}

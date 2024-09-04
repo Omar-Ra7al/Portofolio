@@ -1,0 +1,39 @@
+.tsparticles-line-container {
+  min-height: 100vh !important;
+  background: var(--background-color);
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 100px;
+  gap: 30px;
+}
+
+.logo-container {
+  max-width: 100%;
+}
+
+.typing-container {
+  flex: 1;
+  white-space: pre-wrap;
+}
+.typing-container div {
+  font-size: 30px !important;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+@media (max-width: 575px) {
+  .typing-container div {
+    font-size: 20px !important;
+  }
+}
+.typing-container div::after {
+  color: var(--main-color);
+}
