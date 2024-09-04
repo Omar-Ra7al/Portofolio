@@ -1,5 +1,5 @@
 import { motion, useScroll, useSpring } from "framer-motion";
-import "./Scroll.css";
+import "./scroll.css";
 export default function Scroll() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
