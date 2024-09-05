@@ -109,6 +109,7 @@ const ParticlesComponent = ({ children }) => {
         }}
       />
       <div
+        className="skills-content"
         style={{
           position: "relative",
           zIndex: 1,

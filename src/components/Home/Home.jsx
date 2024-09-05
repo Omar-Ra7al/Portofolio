@@ -25,8 +25,7 @@ export default function HomeJsx() {
             <motion.section
               className="logo"
               initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1 }}>
+              animate={{ x: 0, opacity: 1 }}>
               <div className="profile-img">
                 <img
                   className="svg"

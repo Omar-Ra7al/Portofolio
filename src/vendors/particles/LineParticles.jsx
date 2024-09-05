@@ -185,7 +185,7 @@ const ParticlesComponent = ({ color, children }) => {
   return (
     <div
       className="tsparticles-line-container"
-      style={{ width: "100%", height: "600px", position: "relative" }}>
+      style={{ width: "100%", position: "relative" }}>
       <div
         className="home-content"
         style={{

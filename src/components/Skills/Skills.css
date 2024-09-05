@@ -1,0 +1,46 @@
+.tsparticles-skills-container {
+  /* background-color: #002d72; */
+  /* background-color: #002d72; */
+  /* background-color: #004e92; */
+  /* background-color: #c8a2c8; */
+  /* background-color: #003d6b; */
+
+  /* background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
+
+  background-color: var(--section-bg);
+  /* background-color: #66a6ff; */
+
+  /* background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%); */
+  /* background: linear-gradient(0deg, #6dd5ed 0%, #2193b0 100%); */
+  /* background: linear-gradient(0deg, #89f7fe 0%, #66a6ff 100%); */
+
+  /* Dark */
+  /* background: linear-gradient(135deg, #004e92 0%, #000428 100%); */
+  /* background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); */
+  /* Light */
+  /* background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%); */
+  /* background: linear-gradient(0deg, #89f7fe 0%, #66a6ff 100%); */
+
+  color: #fff;
+}
+.skills-wrraper {
+}
+.tsparticles-skills-container .skills-content {
+  height: 100%;
+}
+.tsparticles-skills-container .container {
+  padding: 50px 0;
+}
+
+.skills-title {
+  background-color: var(--section-bg);
+}
+.skills-title .container {
+  padding-top: 50px;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

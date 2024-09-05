@@ -1,36 +1,48 @@
 :root {
-  /* --main-color: #00a1c9; */
   /* --background-color: linear-gradient(135deg, #1d2b64 0%, #0f2027 100%); */
   /* --background-color: linear-gradient(135deg, #434343 0%, #000000 100%); */
   --bg-blur: blur(30px);
 
   --main-color: #3b82f6;
+  /* nav menu to gradiant */
+  --main-color-rgb: 59, 130, 246;
+
   /* << Bg */
   --background-color: linear-gradient(135deg, #000428 0%, #004e92 100%);
-  --secondary-bg: #e2e8f0;
   --nav-bg-color: #ffffff1a;
-  --main-color-rgb: 59, 130, 246;
-  /*  Bg //>>*/
+  --secondary-bg: #e2e8f0;
 
+  /*  Bg //>>*/
+  /* --section-bg: #001a33; */
+  /* --section-bg: #00264d; */
+  /* --section-bg: linear-gradient(135deg, #00264d 0%, #001a33 100%); */
+  --section-bg: #000428;
+
+  /* Text */
   --text-color: #e2e8f0;
   --secondary-text: #000428;
 
+  /* Text or Bg */
   --dark-color: #000438;
   --light-color: #e2e8f0;
+
+  --footer-bg: #001f3f;
 }
 
-/* --background-color: linear-gradient(135deg, #e0f7fa 0%, #c1e1ec 100%); */
 /* --background-color: linear-gradient(135deg, #ebf5fc 0%, #d1e8e2 100%); */
 /* --background-color: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%); */
+/* --background-color: linear-gradient(135deg, #e0f7fa 0%, #c1e1ec 100%); */
 .light-theme {
-  --main-color-rgb: 118, 157, 216;
+  /* nav menu to gradiant */
   --main-color-rgb: 29, 60, 125;
-  --main-color: #3b82f6;
 
+  /* Bg */
   --background-color: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
-  --secondary-bg: #000428;
-
   --nav-bg-color: #0000002a;
+  --secondary-bg: #000428;
+  --section-bg: #6e9bcf;
+
+  /* Text */
   --text-color: #111827;
   --secondary-text: #e2e8f0;
 }
