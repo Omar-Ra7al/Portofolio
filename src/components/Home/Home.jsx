@@ -20,7 +20,7 @@ export default function HomeJsx() {
     <LineParticles color={theme ? "#fff" : "#000"}>
       <NavBar setLight={setTheme} />
       <div className="container">
-        <main className="main">
+        <div className="main">
           <div className="logo-container">
             <motion.section
               className="logo"
@@ -54,7 +54,7 @@ export default function HomeJsx() {
           <section className="download-cv">
             <BtnCv />
           </section>
-        </main>
+        </div>
       </div>
     </LineParticles>
   );

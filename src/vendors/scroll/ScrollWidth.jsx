@@ -8,11 +8,12 @@ export default function Scroll() {
     restDelta: 0.001,
   });
   return (
-    <motion.div
-      className="progress-bar"
-      style={{
-        scaleX,
-      }}
-    />
+    <>
+      <motion.div
+        className="progress-bar"
+        style={{
+          scaleX,
+        }}></motion.div>
+    </>
   );
 }

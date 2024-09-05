@@ -13,7 +13,7 @@ export default function NavBar({ setLight }) {
       <div className="blur"></div>
       <div className="container">
         <div className="logo-header">
-          <p>Responsive</p>
+          <p>&lt;R.Dev/&gt;</p>
         </div>
 
         <div className="toggle-nav">

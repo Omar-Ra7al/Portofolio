@@ -1,35 +1,36 @@
 :root {
   /* --main-color: #00a1c9; */
-  --main-color: #3b82f6;
-  --background-color: linear-gradient(135deg, #1d2b64 0%, #0f2027 100%);
-  --background-color: linear-gradient(135deg, #434343 0%, #000000 100%);
-  --background-color: linear-gradient(135deg, #000428 0%, #004e92 100%);
+  /* --background-color: linear-gradient(135deg, #1d2b64 0%, #0f2027 100%); */
+  /* --background-color: linear-gradient(135deg, #434343 0%, #000000 100%); */
+  --bg-blur: blur(30px);
 
+  --main-color: #3b82f6;
+  /* << Bg */
+  --background-color: linear-gradient(135deg, #000428 0%, #004e92 100%);
   --secondary-bg: #e2e8f0;
-  --background-color-start: #000428;
-  --background-color-end: #004e92;
   --nav-bg-color: #ffffff1a;
   --main-color-rgb: 59, 130, 246;
+  /*  Bg //>>*/
 
   --text-color: #e2e8f0;
   --secondary-text: #000428;
-  --bg-blur: blur(30px);
+
+  --dark-color: #000438;
+  --light-color: #e2e8f0;
 }
 
+/* --background-color: linear-gradient(135deg, #e0f7fa 0%, #c1e1ec 100%); */
+/* --background-color: linear-gradient(135deg, #ebf5fc 0%, #d1e8e2 100%); */
+/* --background-color: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%); */
 .light-theme {
-  --main-color-rgb: 10, 46, 111;
+  --main-color-rgb: 118, 157, 216;
+  --main-color-rgb: 29, 60, 125;
   --main-color: #3b82f6;
-  --background-color-start: #e0f7fa;
-  --background-color-end: #c1e1ec;
-  --background-color: linear-gradient(135deg, #e0f7fa 0%, #c1e1ec 100%);
-  --background-color: linear-gradient(135deg, #ebf5fc 0%, #d1e8e2 100%);
 
-  --background-color: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%);
   --background-color: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
   --secondary-bg: #000428;
 
-  /* --nav-bg-color: #0000001a; */
-  --nav-bg-color: rgba(50, 50, 50, 0.2);
+  --nav-bg-color: #0000002a;
   --text-color: #111827;
   --secondary-text: #e2e8f0;
 }

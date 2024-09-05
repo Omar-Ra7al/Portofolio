@@ -186,24 +186,25 @@ const ParticlesComponent = ({ color, children }) => {
     <div
       className="tsparticles-line-container"
       style={{ width: "100%", height: "600px", position: "relative" }}>
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={particlesOptions}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-        }}
-      />
       <div
+        className="home-content"
         style={{
           position: "relative",
           zIndex: 1,
         }}>
         {children}
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          options={particlesOptions}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+          }}
+        />
       </div>
     </div>
   );

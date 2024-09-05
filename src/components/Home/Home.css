@@ -1,29 +1,31 @@
 .tsparticles-line-container {
   min-height: 100vh !important;
-  background: var(--background-color);
+}
+#tsparticles {
+  width: 100%;
+  min-height: 100%;
+}
+.tsparticles-line-container .home-content {
+  min-height: 100vh;
+  background: var(--background-color) !important;
+  background-color: red;
 }
 
 .main {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
-  padding: 100px;
+  padding: 100px 0;
   gap: 30px;
+
+  position: relative;
+  z-index: 1;
 }
 
-.logo-container {
-  max-width: 100%;
-}
-
-.typing-container {
-  flex: 1;
-  white-space: pre-wrap;
-}
 .typing-container div {
   font-size: 30px !important;
   color: var(--text-color);
@@ -32,6 +34,11 @@
 @media (max-width: 575px) {
   .typing-container div {
     font-size: 20px !important;
+  }
+}
+@media (max-width: 791px) {
+  .typing-container div {
+    font-size: 24px !important;
   }
 }
 .typing-container div::after {

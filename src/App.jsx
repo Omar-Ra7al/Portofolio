@@ -34,22 +34,18 @@ function App() {
       ) : (
         <div className="content">
           <ScrollCounter />
-          <HomeJsx />
-          <div className="upper-scroll">
-            <ScrollCounter />
-          </div>
 
-          <section className="section partclies-skills">
-            <SkillsParticles>
-              <motion.div
-                initial={{ x: 0 }}
-                whileInView={{
-                  x: 100,
-                }}
-                transition={{ type: "spring", stiffness: 300 }}></motion.div>
-              <h1>skilllssss</h1>
-            </SkillsParticles>
-          </section>
+          <HomeJsx />
+
+          <SkillsParticles>
+            <motion.div
+              initial={{ x: 0 }}
+              whileInView={{
+                x: 100,
+              }}
+              transition={{ type: "spring", stiffness: 300 }}></motion.div>
+            <h1>skilllssss</h1>
+          </SkillsParticles>
         </div>
       )}
     </>

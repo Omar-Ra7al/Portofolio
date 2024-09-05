@@ -8,7 +8,6 @@
   width: 140px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  background-color: var(--secondary-bg);
   background-color: #000428;
   border: 1px solid rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -28,13 +27,21 @@
   }
 }
 
+@media (max-width: 791px) {
+  .btn-cv {
+    font-size: 12px;
+    width: 135px;
+    height: 45px;
+    gap: 5px;
+  }
+}
 /* Pulse Effect */
 @keyframes pulseCv {
   0% {
     box-shadow: 0 0 0 0 rgba(110, 142, 251, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 20px rgba(110, 142, 251, 0);
+    box-shadow: 0 0 0 15px rgba(110, 142, 251, 0);
   }
   100% {
     box-shadow: 0 0 0 0 rgba(110, 142, 251, 0);
@@ -101,7 +108,7 @@
 
 .btn-cv:hover .download {
   transform: scale(1.2);
-  fill: var(--secondary-text);
+  fill: #fff;
 }
 
 @keyframes goDown {
