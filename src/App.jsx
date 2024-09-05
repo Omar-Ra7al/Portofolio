@@ -31,13 +31,13 @@ function App() {
       {showLoader ? (
         <Loader />
       ) : (
-        <div className="content">
+        <>
           <ScrollCounter />
 
           <HomeJsx />
 
           <SkillsSection />
-        </div>
+        </>
       )}
     </>
   );

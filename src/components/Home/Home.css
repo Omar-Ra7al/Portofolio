@@ -31,14 +31,15 @@
   color: var(--text-color);
   margin-bottom: 30px;
 }
-@media (max-width: 575px) {
-  .typing-container div {
-    font-size: 20px !important;
-  }
-}
+
 @media (max-width: 791px) {
   .typing-container div {
     font-size: 24px !important;
+  }
+}
+@media (max-width: 575px) {
+  .typing-container div {
+    font-size: 20px !important;
   }
 }
 .typing-container div::after {

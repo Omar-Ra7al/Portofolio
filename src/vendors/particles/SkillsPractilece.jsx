@@ -13,6 +13,8 @@ import bootstrapLogo from "../../assets/svgs/bootstrap-5.svg";
 import tailwindcssLogo from "../../assets/svgs/tailwindcss.svg";
 import vscLogo from "../../assets/svgs/Vsc.svg";
 import typescriptLogo from "../../assets/svgs/typescript.svg";
+import gitLogo from "../../assets/svgs/git.svg";
+import gitHubLogo from "../../assets/svgs/github.svg";
 
 const ParticlesComponent = ({ children }) => {
   const particlesInit = useCallback(async (engine) => {
@@ -52,6 +54,8 @@ const ParticlesComponent = ({ children }) => {
           { src: tailwindcssLogo, height: 30, width: 35 },
           { src: vscLogo, height: 30, width: 30 },
           { src: typescriptLogo, height: 30, width: 30 },
+          { src: gitLogo, height: 30, width: 30 },
+          { src: gitHubLogo, height: 30, width: 30 },
         ],
       },
       size: {
@@ -95,7 +99,7 @@ const ParticlesComponent = ({ children }) => {
   return (
     <div
       className="tsparticles-skills-container"
-      style={{ width: "100%", height: "600px", position: "relative" }}>
+      style={{ width: "100%", position: "relative" }}>
       <Particles
         id="tsparticles2"
         init={particlesInit}

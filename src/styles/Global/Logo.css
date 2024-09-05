@@ -44,15 +44,7 @@
   width: calc(var(--size) - 100px);
   border-radius: 50%;
 }
-@media (max-width: 575px) {
-  .logo {
-    width: calc(var(--size) - 100px);
-    height: calc(var(--size) - 100px);
-  }
-  .svg {
-    width: calc(var(--size) - 200px);
-  }
-}
+
 @media (max-width: 791px) {
   .logo {
     width: calc(var(--size) - 50px);
@@ -60,6 +52,15 @@
   }
   .svg {
     width: calc(var(--size) - 150px);
+  }
+}
+@media (max-width: 575px) {
+  .logo {
+    width: calc(var(--size) - 100px);
+    height: calc(var(--size) - 100px);
+  }
+  .svg {
+    width: calc(var(--size) - 200px);
   }
 }
 .ripple-container {

@@ -7,10 +7,17 @@ header {
   transform: translateX(-50%);
   background-color: var(--nav-bg-color);
   z-index: 10000;
-  
 }
 .logo-header p {
   font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(135deg, #3b82f6 0%, #004e92 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  white-space: nowrap; /* Ensure the text doesn't break */
 }
 .blur {
   position: absolute;
@@ -99,8 +106,8 @@ nav {
     rgba(var(--main-color-rgb), 0.6),
     rgba(var(--main-color-rgb), 0.7)
   );
-  backdrop-filter: var(--bg-blur) saturate(150%);
-  -webkit-backdrop-filter: var(--bg-blur) saturate(150%);
+  backdrop-filter: var(--bg-blur);
+  -webkit-backdrop-filter: var(--bg-blur);
 
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;

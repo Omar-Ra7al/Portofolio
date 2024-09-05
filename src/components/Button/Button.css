@@ -18,6 +18,15 @@
   position: relative;
 }
 
+@media (max-width: 791px) {
+  .btn-cv {
+    font-size: 12px;
+    width: 135px;
+    height: 45px;
+    gap: 5px;
+  }
+}
+
 @media (max-width: 575px) {
   .btn-cv {
     font-size: 12px;
@@ -27,14 +36,6 @@
   }
 }
 
-@media (max-width: 791px) {
-  .btn-cv {
-    font-size: 12px;
-    width: 135px;
-    height: 45px;
-    gap: 5px;
-  }
-}
 /* Pulse Effect */
 @keyframes pulseCv {
   0% {
