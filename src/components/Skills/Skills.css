@@ -23,7 +23,7 @@
 
   color: #fff;
   z-index: 1;
-  min-height: 60vh !important;
+  min-height: 100vh !important;
 }
 
 :root {
@@ -33,6 +33,9 @@
 
 .tsparticles-skills-container .skills-content {
   height: 100%;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  min-height: 100vh !important;
 }
 .tsparticles-skills-container .container {
   padding-bottom: 50px;
