@@ -28,16 +28,16 @@
 
   --footer-bg: #001f3f;
 }
-/* --background-color: linear-gradient(135deg, #ebf5fc 0%, #d1e8e2 100%); */
-/* --background-color: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%); */
-/* --background-color: linear-gradient(135deg, #e0f7fa 0%, #c1e1ec 100%); */
 .light-theme {
   /* nav menu to gradiant */
   --main-color-rgb: 29, 60, 125;
 
   /* Bg */
-  --background-color: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
-  --nav-bg-color: #0000004a;
+  /* --background-color: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%); */
+  /* --background-color: linear-gradient(135deg, #e0f7fa 0%, #c1e1ec 100%); */
+  /* --background-color: linear-gradient(135deg, #ebf5fc 0%, #d1e8e2 100%); */
+  --background-color: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%);
+  --nav-bg-color: #0000001a;
   --secondary-bg: #000428;
   --section-bg: #66a6ff;
 

@@ -1,7 +1,9 @@
 body {
   font-family: Poppins;
   width: 100%;
-  background: #00325d;
+  background: var(--background-color);
+
+  height: 1000vh;
 }
 * {
   box-sizing: border-box;
@@ -14,10 +16,6 @@ ul {
 }
 a {
   text-decoration: none;
-}
-.content {
-  width: 100%;
-  overflow: hidden;
 }
 
 .container {

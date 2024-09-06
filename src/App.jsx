@@ -1,6 +1,6 @@
 import "./styles/Themes/Variables.css";
-import "./App.css";
 import "./styles/Themes/Global.css";
+import "./App.css";
 
 // Vendors
 import ScrollCounter from "./vendors/scroll/ScrollWidth";
@@ -24,21 +24,24 @@ function App() {
 
     return () => clearTimeout(loaderTimeout);
   }, []);
+
   //  End Loader//>>
 
   return (
     <>
-      {showLoader ? (
-        <Loader />
-      ) : (
-        <>
-          <ScrollCounter />
+      <div className="content">
+        {showLoader ? (
+          <Loader />
+        ) : (
+          <>
+            <ScrollCounter />
 
-          <HomeJsx />
+            <HomeJsx />
 
-          <SkillsSection />
-        </>
-      )}
+            <SkillsSection />
+          </>
+        )}
+      </div>
     </>
   );
 }
