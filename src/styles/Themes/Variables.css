@@ -16,7 +16,7 @@
   /* --section-bg: #001a33; */
   /* --section-bg: #00264d; */
   /* --section-bg: linear-gradient(135deg, #00264d 0%, #001a33 100%); */
-  --section-bg: #000428;
+  --section-bg: #0e133b;
 
   /* Text */
   --text-color: #e2e8f0;
@@ -37,9 +37,9 @@
 
   /* Bg */
   --background-color: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
-  --nav-bg-color: #0000002a;
+  --nav-bg-color: #0000004a;
   --secondary-bg: #000428;
-  --section-bg: #6e9bcf;
+  --section-bg: #66a6ff;
 
   /* Text */
   --text-color: #111827;

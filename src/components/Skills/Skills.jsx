@@ -14,13 +14,6 @@ export default function SkillsSection() {
       </div>
       <SkillsParticles>
         <div className="container">
-          {/* <p className="skills-description">
-              Explore the programming languages and technologies I specialize
-              in. This section features animated icons representing my
-              proficiency in various tools and languages, providing a dynamic
-              visual of my technical expertise.
-            </p> */}
-
           <div className="indecators-parent">
             <div className="wrraper">
               <div className="indecator r"></div>
@@ -51,6 +44,12 @@ export default function SkillsSection() {
               </div>
             </div>
           </div>
+          <p className="skills-description">
+            Explore the programming languages and technologies I specialize in.
+            This section features animated icons representing my proficiency in
+            various tools and languages, providing a dynamic visual of my
+            technical expertise.
+          </p>
 
           <motion.div
             initial={{ x: 0 }}

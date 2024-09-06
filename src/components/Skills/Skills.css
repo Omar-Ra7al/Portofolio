@@ -8,6 +8,8 @@
   /* background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
 
   background-color: var(--section-bg);
+
+  /* background: linear-gradient(135deg, #000428 0%, #004e92 100%); */
   /* background-color: #66a6ff; */
 
   /* background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%); */
@@ -20,15 +22,13 @@
   /* Light */
   /* background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%); */
   /* background: linear-gradient(0deg, #89f7fe 0%, #66a6ff 100%); */
-
-  color: #fff;
-  z-index: 1;
   min-height: 100vh !important;
+  z-index: -1;
 }
 
 :root {
   --indecator-width: 3px;
-  --indecator-bg: linear-gradient(45deg, #3b3b51, #211e46) 1;
+  --indecator-bg: linear-gradient(135deg, #3b82f6 0%, #004e92 100%) 1;
 }
 
 .tsparticles-skills-container .skills-content {
@@ -43,6 +43,7 @@
 
 .skills-title {
   background-color: var(--section-bg);
+
   padding-top: 50px;
   color: var(--text-color);
   display: flex;
@@ -54,10 +55,9 @@
   align-items: center;
   justify-content: center;
   font-size: 28px;
-
   gap: 10px;
   padding: 10px;
-  background: linear-gradient(45deg, #3b3b51, #211e46);
+  background: linear-gradient(135deg, #3b82f6 0%, #004e92 100%);
   border-radius: 7px;
   padding: 10px 20px;
   color: white;
@@ -68,6 +68,16 @@
     padding: 5px 10px;
     font-size: 20px;
   }
+}
+.skills-description {
+  padding-top: 50px;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: var(--text-color);
 }
 .indecators-parent {
   position: relative;
@@ -95,7 +105,7 @@
   bottom: -50px;
   height: 50px;
   width: var(--indecator-width);
-  background: linear-gradient(45deg, #3b3b51, #211e46);
+  background: linear-gradient(135deg, #3b82f6 0%, #004e92 100%);
   border-radius: 20px;
 }
 .indecator.r {
@@ -104,6 +114,7 @@
 }
 .indecator.l {
   border-left: var(--indecator-width) solid transparent;
+  border-image: linear-gradient(300deg, #3b82f6 0%, #004e92 100%) 1;
 }
 .indecator.r::before {
   left: 0;
@@ -124,6 +135,19 @@
   justify-content: center;
 }
 
+.light-theme {
+  .languages span,
+  .frame-works span {
+    background: linear-gradient(
+      45deg,
+      rgba(240, 248, 255, 0.8),
+      /* Light soft blue */ rgba(200, 230, 255, 0.5) /* Light blue */
+    );
+
+    outline: 2px solid var(--main-color);
+  }
+}
+
 .languages span,
 .frame-works span {
   background: linear-gradient(
@@ -137,7 +161,6 @@
   border: 2px solid var(--section-bg);
   outline: 2px solid #1b2048;
   color: var(--main-color);
-  /* color: #1b2048; */
   font-size: 16px;
   border-radius: 5px;
   transition: 0.3s;

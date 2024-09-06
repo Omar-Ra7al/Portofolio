@@ -6,7 +6,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--nav-bg-color);
-  z-index: 10000;
+  z-index: 222210000;
 }
 .logo-header p {
   font-size: 20px;
