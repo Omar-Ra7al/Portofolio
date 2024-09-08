@@ -24,31 +24,40 @@ export default function AboutMe() {
           </motion.p>
 
           <div className="card-container">
-            <div className="card education">
+            <motion.div
+              initial={{ marginLeft: -50 }}
+              whileInView={{ marginLeft: 0 }}
+              className="card education">
               <div className="card-content">
                 <p>
                   Graduated in 2023 with a Bachelor's in Management Information
                   Systems
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="card time-zone">
+            <motion.div
+              initial={{ marginLeft: 100 }}
+              whileInView={{ marginLeft: 0 }}
+              className="card time-zone">
               <div className="card-content">
                 <p>
                   Flexible and adaptable to different time zones for seamless
                   collaboration.
                 </p>
               </div>
-            </div>
-            <div className="card client">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              className="card client">
               <div className="card-content">
                 <p>
                   Dedicated to fostering trust and open communication with
                   clients.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

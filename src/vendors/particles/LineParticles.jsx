@@ -148,8 +148,8 @@ const ParticlesComponent = ({ color, children }) => {
       },
       interactivity: {
         events: {
-          onClick: { enable: false, mode: "push" },
-          onHover: { enable: false, mode: "repulse" },
+          onClick: { enable: true, mode: "push" },
+          onHover: { enable: true, mode: "repulse" },
         },
         modes: {
           push: { quantity: 2 },

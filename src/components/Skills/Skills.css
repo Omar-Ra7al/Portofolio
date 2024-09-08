@@ -1,6 +1,5 @@
 .skills-content {
   min-height: 60vh;
-  padding: 50px 0;
 }
 .tsparticles-skills-container {
   min-height: 60vh;
@@ -16,7 +15,7 @@
 
 .skills-content .skills-items {
   background: var(--nav-bg-color);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
   padding: 20px;
   border-radius: 10px;
 }
@@ -24,6 +23,7 @@
 .skills-content .skills-items .title {
   color: var(--text-color);
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 /* Wrapper of all titles and slkills */
@@ -93,7 +93,7 @@
   }
 }
 
-.tech-wrapper .icons.languages {
+/* .tech-wrapper .icons.languages {
   animation: hideShow 1s 1 step-end;
 }
 .tech-wrapper .icons.frameworks {
@@ -104,9 +104,9 @@
 }
 .tech-wrapper .icons.techniques {
   animation: hideShow 4s 1 step-end;
-}
+} */
 
-/* .tech-wrapper .icons.languages .img-wrapper:nth-of-type(1) {
+.tech-wrapper .icons.languages .img-wrapper:nth-of-type(1) {
   animation: hideShow 1s 1 step-end;
 }
 .tech-wrapper .icons.languages .img-wrapper:nth-of-type(2) {
@@ -117,4 +117,43 @@
 }
 .tech-wrapper .icons.languages .img-wrapper:nth-of-type(4) {
   animation: hideShow 2.2s 1 step-end;
-} */
+}
+
+.tech-wrapper .icons.frameworks .img-wrapper:nth-of-type(1) {
+  animation: hideShow 2.6s 1 step-end;
+}
+.tech-wrapper .icons.frameworks .img-wrapper:nth-of-type(2) {
+  animation: hideShow 3s 1 step-end;
+}
+.tech-wrapper .icons.frameworks .img-wrapper:nth-of-type(3) {
+  animation: hideShow 3.4s 1 step-end;
+}
+.tech-wrapper .icons.frameworks .img-wrapper:nth-of-type(4) {
+  animation: hideShow 3.8s 1 step-end;
+}
+.tech-wrapper .icons.frameworks .img-wrapper:nth-of-type(5) {
+  animation: hideShow 4.2s 1 step-end;
+}
+
+.tech-wrapper .icons.tools .img-wrapper:nth-of-type(1) {
+  animation: hideShow 4.6s 1 step-end;
+}
+.tech-wrapper .icons.tools .img-wrapper:nth-of-type(2) {
+  animation: hideShow 5s 1 step-end;
+}
+.tech-wrapper .icons.tools .img-wrapper:nth-of-type(3) {
+  animation: hideShow 5.4s 1 step-end;
+}
+.tech-wrapper .icons.tools .img-wrapper:nth-of-type(4) {
+  animation: hideShow 5.8s 1 step-end;
+}
+.tech-wrapper .icons.tools .img-wrapper:nth-of-type(5) {
+  animation: hideShow 6.2s 1 step-end;
+}
+
+.tech-wrapper .icons.techniques .img-wrapper:nth-of-type(1) {
+  animation: hideShow 6.6s 1 step-end;
+}
+.tech-wrapper .icons.techniques .img-wrapper:nth-of-type(2) {
+  animation: hideShow 7s 1 step-end;
+}
