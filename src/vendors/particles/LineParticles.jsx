@@ -94,7 +94,7 @@
 //       <div
 //         style={{
 //           position: "relative",
-//           zIndex: 1,
+//           zIndex: 1,z
 //         }}>
 //         {children}
 //       </div>
@@ -108,11 +108,12 @@ import { useCallback, useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
+// eslint-disable-next-line react/prop-types
 const ParticlesComponent = ({ color, children }) => {
   // Define getParticlesOptions function inside the component
   const getParticlesOptions = (screenWidth) => {
-    const particleNumber = screenWidth > 768 ? 100 : 150; // Adjust numbers based on your needs
-    const linkDistance = screenWidth > 768 ? 180 : 120; // Adjust distance based on screen width
+    const particleNumber = screenWidth > 768 ? 80 : 50; // Adjust numbers based on your needs
+    const linkDistance = screenWidth > 768 ? 150 : 100; // Adjust distance based on screen width
 
     return {
       background: { color: "" },
@@ -133,7 +134,7 @@ const ParticlesComponent = ({ color, children }) => {
           outModes: { default: "bounce" },
         },
         number: {
-          density: { enable: true },
+          density: { enable: false },
           value: particleNumber,
         },
         opacity: {

@@ -35,22 +35,14 @@
     gap: 5px;
   }
 }
-
-/* Pulse Effect */
-@keyframes pulseCv {
-  0% {
-    box-shadow: 0 0 0 0 rgba(110, 142, 251, 0.4);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(110, 142, 251, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(110, 142, 251, 0);
-  }
-}
-
 .btn-cv {
   animation: pulseCv 3s infinite;
+}
+
+.btn-cv:hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-cv::after {
@@ -65,6 +57,19 @@
   animation: pulseCv 1.5s infinite;
 }
 
+/* Pulse Effect */
+@keyframes pulseCv {
+  0% {
+    box-shadow: 0 0 0 0 rgba(110, 142, 251, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(110, 142, 251, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(110, 142, 251, 0);
+  }
+}
+
 /* Ripple Effect */
 @keyframes rippleCv {
   0% {
@@ -72,7 +77,7 @@
     opacity: 1;
   }
   100% {
-    transform: scale(4);
+    transform: scale(1.2);
     opacity: 0;
   }
 }
@@ -89,37 +94,18 @@
 }
 
 .btn-cv:active::before {
-  animation: rippleCv 0.6s linear;
+  animation: rippleCv 0.3s linear;
   transform: scale(1);
   opacity: 1;
-}
-
-.btn-cv:hover {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transform: translateY(10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-cv .download {
   transition: transform 0.5s, fill 0.5s;
   fill: var(--main-color);
-  animation: goDown 1s infinite ease-in-out;
   margin: 0;
 }
 
 .btn-cv:hover .download {
   transform: scale(1.2);
   fill: #fff;
-}
-
-@keyframes goDown {
-  0% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1.2);
-  }
 }

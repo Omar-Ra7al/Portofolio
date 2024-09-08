@@ -1,6 +1,11 @@
+.home {
+  min-height: 100vh;
+}
 .tsparticles-line-container {
   min-height: 100vh !important;
+  z-index: 2 !important;
 }
+
 #tsparticles {
   width: 100%;
   min-height: 100%;
@@ -21,7 +26,6 @@
   text-align: center;
   padding: 100px 0;
   gap: 30px;
-
   position: relative;
   z-index: 1;
 }
@@ -34,7 +38,7 @@
 
 @media (max-width: 791px) {
   .typing-container div {
-    font-size: 24px !important;
+    font-size: 26px !important;
   }
 }
 @media (max-width: 575px) {
@@ -44,4 +48,6 @@
 }
 .typing-container div::after {
   color: var(--main-color);
+  width: 100px;
+  height: 200px;
 }

@@ -5,21 +5,22 @@ export default function TypingText() {
     <div className="typing-container">
       <TypeAnimation
         sequence={[
-          "Who Am I !!",
-          1500,
-          "Omar Rahal",
+          "",
+          500,
+          "Weclome 👋",
+          500,
+          "I Am Omar Rahal <R.Dev 💻/>",
           1500,
           "<Frontend Developer />",
-          3000,
+          1000,
           "Passionate about building interactive web applications.",
-          3000,
+          1000,
           "",
           600,
         ]}
         wrapper="div"
         cursor={true}
         repeat={Infinity}
-        style={{ display: "inline-flex", fontSize: "24px" }}
       />
     </div>
   );

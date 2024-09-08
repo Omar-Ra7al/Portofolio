@@ -10,51 +10,67 @@ import lightLogo from "../../assets/logo/White-Gold.png";
 // import goldenLogo from "../../assets/logo/Gold-Gold.png";
 import { motion } from "framer-motion";
 import { useState } from "react";
-// import { useEffect } from "react";
-// import darkLogo from "../../assets/logo/Black-Gold .png";
-
+import { useInView } from "react-intersection-observer";
 export default function HomeJsx() {
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Trigger the callback only once
+    threshold: 0.1, // Trigger when 10% of the section is visible
+  });
   // True === Dark Theme
   const [theme, setTheme] = useState(true);
   return (
-    <LineParticles color={theme ? "#fff" : "#000"}>
+    <div className="home" ref={ref}>
       <NavBar setLight={setTheme} />
-      <div className="container">
-        <div className="main">
-          <div className="logo-container">
-            <motion.section
-              className="logo"
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}>
-              <div className="profile-img">
-                <img
-                  className="svg"
-                  src={theme ? lightLogo : lightLogo}
-                  alt="logo"
-                />
-              </div>
-              <div className="ripple-container">
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-              </div>
-            </motion.section>
-          </div>
-
-          <motion.section
-            initial={{ x: -200, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+      {inView ? (
+        <LineParticles color={theme ? "#fff" : "#000"}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="typing-text">
-            <TypingText />
-          </motion.section>
+            className="container">
+            <div className="main">
+              <div className="logo-container">
+                <motion.section
+                  className="logo"
+                  initial={{ x: 100, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}>
+                  <div className="profile-img">
+                    <img
+                      className="svg"
+                      src={theme ? lightLogo : lightLogo}
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="ripple-container">
+                    <div className="box"></div>
+                    <div className="box"></div>
+                    <div className="box"></div>
+                    <div className="box"></div>
+                  </div>
+                </motion.section>
+              </div>
 
-          <section className="download-cv">
-            <BtnCv />
-          </section>
-        </div>
-      </div>
-    </LineParticles>
+              <motion.section
+                initial={{ x: -200, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="typing-text">
+                <TypingText />
+              </motion.section>
+
+              <motion.section
+                className="download-cv"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 2 }}>
+                <BtnCv />
+              </motion.section>
+            </div>
+          </motion.div>
+        </LineParticles>
+      ) : (
+        ""
+      )}
+    </div>
   );
 }

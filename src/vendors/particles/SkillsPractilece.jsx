@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
@@ -16,6 +16,7 @@ import typescriptLogo from "../../assets/svgs/typescript.svg";
 import gitLogo from "../../assets/svgs/git.svg";
 import gitHubLogo from "../../assets/svgs/github.svg";
 
+// eslint-disable-next-line react/prop-types
 const ParticlesComponent = ({ children }) => {
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
@@ -34,7 +35,7 @@ const ParticlesComponent = ({ children }) => {
     },
     particles: {
       number: {
-        value: 20,
+        value: 15,
         density: {
           enable: true,
           area: "100%", // Adjust based on the size of the container
@@ -59,10 +60,10 @@ const ParticlesComponent = ({ children }) => {
         ],
       },
       size: {
-        value: 25,
+        value: 15,
         random: false,
         anim: {
-          enable: true,
+          enable: false,
           speed: 5,
           size_min: 10,
           sync: true,
@@ -70,36 +71,57 @@ const ParticlesComponent = ({ children }) => {
       },
       move: {
         enable: true,
-        speed: 3,
+        speed: 2,
         direction: "none",
         random: true,
         straight: false,
         outModes: {
-          default: "bounce",
+          default: "bounce", // Particles bounce on container edges
         },
       },
     },
     interactivity: {
       events: {
         onHover: {
-          enable: true,
-          mode: "slow",
+          enable: false,
+          mode: "slow", // Particles slow down on hover
         },
       },
       modes: {
         slow: {
           radius: 150,
-          factor: 3,
+          factor: 3, // Controls how slow particles become on hover
         },
       },
     },
-    retinaDetect: true,
+    retinaDetect: true, // Adjusts particles for retina screens
   };
+
+  useEffect(() => {
+    // Ensuring proper size adjustments
+    const handleResize = () => {
+      const canvas = document.querySelector("#tsparticles2 canvas");
+      if (canvas) {
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div
       className="tsparticles-skills-container"
-      style={{ width: "100%", position: "relative" }}>
+      style={{
+        width: "100%",
+        zIndex: 1,
+        position: "relative",
+      }}>
       <Particles
         id="tsparticles2"
         init={particlesInit}

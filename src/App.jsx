@@ -13,7 +13,8 @@ import { useEffect, useState } from "react";
 // Component
 import HomeJsx from "./components/Home/Home";
 import Loader from "./vendors/Loader/Loader";
-import SkillsSection from "./components/Skills/Skills";
+import Skills from "./components/Skills/Skills";
+import AboutMe from "./components/AboutMe/AboutMe";
 function App() {
   // << Start Loader
   const [showLoader, setShowLoader] = useState(true);
@@ -35,10 +36,9 @@ function App() {
         ) : (
           <>
             <ScrollCounter />
-
             <HomeJsx />
-
-            <SkillsSection />
+            <AboutMe />
+            <Skills />
           </>
         )}
       </div>

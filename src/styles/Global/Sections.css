@@ -1,0 +1,24 @@
+section.title {
+  font-size: 38px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
+section .container .description {
+  color: var(--text-color);
+  font-size: 18px;
+}
+@media (max-width: 791px) {
+  section.title {
+    font-size: 30px;
+  }
+
+  section .container .description {
+    font-size: 14px;
+  }
+}
