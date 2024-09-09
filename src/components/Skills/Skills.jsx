@@ -42,7 +42,7 @@ export default function Skills() {
 
           <SkillsParticles>
             <div className="skills-items">
-              <p className="title">TECH STACK</p>
+              <p className="title">Tech Stack</p>
               <div className="tech-wrapper">
                 <section className="languages">
                   <p className="tech-title">Languages</p>

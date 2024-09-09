@@ -97,7 +97,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(var(--main-color-rgb), 0.1),
     rgba(var(--main-color-rgb), 0.2),
@@ -105,7 +105,8 @@ nav {
     rgba(var(--main-color-rgb), 0.5),
     rgba(var(--main-color-rgb), 0.6),
     rgba(var(--main-color-rgb), 0.7)
-  );
+  ); */
+  background: rgba(4, 4, 4, 0.3);
   backdrop-filter: var(--bg-blur);
   -webkit-backdrop-filter: var(--bg-blur);
 
