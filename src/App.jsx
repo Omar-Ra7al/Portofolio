@@ -15,6 +15,7 @@ import HomeJsx from "./components/Home/Home";
 import Loader from "./vendors/Loader/Loader";
 import Skills from "./components/Skills/Skills";
 import AboutMe from "./components/AboutMe/AboutMe";
+import Projects from "./components/Projects/Projects";
 function App() {
   // << Start Loader
   const [showLoader, setShowLoader] = useState(true);
@@ -39,6 +40,7 @@ function App() {
             <HomeJsx />
             <AboutMe />
             <Skills />
+            <Projects />
           </>
         )}
       </div>

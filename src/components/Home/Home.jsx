@@ -1,12 +1,13 @@
 import "./Home.css";
 import "../../styles/Global/Logo.css";
 import NavBar from "../Navbar/Nav";
-import BtnCv from "../Button/Button";
+import CvBtn from "../Buttons/Download Cv/DownloadCv";
+// import CvBtn from "../Buttons/See More/SeeMore";
 
 import LineParticles from "../../vendors/particles/LineParticles";
 import TypingText from "../../vendors/typingText/TypingText";
 import lightLogo from "../../assets/logo/White-Gold.png";
-// import darkLogo from "../../assets/logo/Black-Gold.png";
+import darkLogo from "../../assets/logo/Black-Gold.png";
 // import goldenLogo from "../../assets/logo/Gold-Gold.png";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -37,7 +38,7 @@ export default function HomeJsx() {
                   <div className="profile-img">
                     <img
                       className="svg"
-                      src={theme ? lightLogo : lightLogo}
+                      src={theme ? lightLogo : darkLogo}
                       alt="logo"
                     />
                   </div>
@@ -63,7 +64,7 @@ export default function HomeJsx() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 2 }}>
-                <BtnCv />
+                <CvBtn />
               </motion.section>
             </div>
           </motion.div>

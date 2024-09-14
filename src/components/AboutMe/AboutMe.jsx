@@ -48,8 +48,9 @@ export default function AboutMe() {
               </div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 0.2 }}
               whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
               className="card client">
               <div className="card-content">
                 <p>
