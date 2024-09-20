@@ -24,6 +24,9 @@
   color: var(--text-color);
   font-size: 28px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Wrapper of all titles and slkills */
@@ -32,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 10px;
 }
 
 .tech-wrapper section {

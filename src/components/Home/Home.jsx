@@ -1,75 +1,76 @@
 import "./Home.css";
-import "../../styles/Global/Logo.css";
-import NavBar from "../Navbar/Nav";
-import CvBtn from "../Buttons/Download Cv/DownloadCv";
-// import CvBtn from "../Buttons/See More/SeeMore";
 
+// Components
+import NavBar from "../Navbar/Nav";
+import Logo from "../Logo/Logo";
+import CvBtn from "../Buttons/Download Cv/DownloadCv";
+
+// Vendors
 import LineParticles from "../../vendors/particles/LineParticles";
 import TypingText from "../../vendors/typingText/TypingText";
-import lightLogo from "../../assets/logo/White-Gold.png";
-import darkLogo from "../../assets/logo/Black-Gold.png";
-// import goldenLogo from "../../assets/logo/Gold-Gold.png";
+
+// Librearey
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+
 export default function HomeJsx() {
-  const { ref, inView } = useInView({
-    triggerOnce: false, // Trigger the callback only once
-    threshold: 0.1, // Trigger when 10% of the section is visible
-  });
-  // True === Dark Theme
   const [theme, setTheme] = useState(true);
+  // Use in vew to hide the commponent if it not showen
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
   return (
     <div className="home" ref={ref}>
+      {/* << Nav Bar >> */}
       <NavBar setLight={setTheme} />
       {inView ? (
+        // << Start Particlles
         <LineParticles color={theme ? "#fff" : "#000"}>
+          {/* << Start Container */}
           <motion.div
+            className="container"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="container">
-            <div className="main">
-              <div className="logo-container">
-                <motion.section
-                  className="logo"
-                  initial={{ x: 100, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}>
-                  <div className="profile-img">
-                    <img
-                      className="svg"
-                      src={theme ? lightLogo : darkLogo}
-                      alt="logo"
-                    />
-                  </div>
-                  <div className="ripple-container">
-                    <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div>
-                  </div>
-                </motion.section>
-              </div>
-
-              <motion.section
+            transition={{ duration: 1 }}>
+            {/* << Start Main Contetnt*/}
+            <main className="main">
+              {/* << Start Logo Container */}
+              <motion.div
+                className="logo"
+                initial={{ y: -100 }}
+                whileInView={{ y: 0 }}
+                transition={{ duration: 1 }}>
+                <Logo theme={theme} />
+              </motion.div>
+              {/* End Logo Container //>> */}
+              {/* << Start Typing Test  */}
+              <motion.div
                 initial={{ x: -200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
                 className="typing-text">
                 <TypingText />
-              </motion.section>
-
-              <motion.section
+              </motion.div>
+              {/* End Typing Test //>> */}
+              {/* << Start Donwload Btn */}
+              <motion.div
                 className="download-cv"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 2 }}>
                 <CvBtn />
-              </motion.section>
-            </div>
+              </motion.div>
+              {/* End Donwload Btn //>> */}
+            </main>
+            {/* End Main Contetnt //>> */}
           </motion.div>
+          {/* End Container // >> */}
         </LineParticles>
       ) : (
+        // End Particlles // >>
         ""
       )}
     </div>

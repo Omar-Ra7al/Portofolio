@@ -1,10 +1,9 @@
 import "./Nav.css";
 import { IoHomeOutline } from "react-icons/io5";
 import { GiNinjaHeroicStance } from "react-icons/gi";
-// import { MdOutlineCodeOff } from "react-icons/md";
+import { FaEnvelopeOpenText } from "react-icons/fa6";
 import { FaUsers } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
-import { FaEnvelopeOpenText } from "react-icons/fa6";
 
 import LighDark from "./Themes/light-dark";
 export default function NavBar({ setLight }) {
@@ -12,10 +11,12 @@ export default function NavBar({ setLight }) {
     <header>
       <div className="blur"></div>
       <div className="container">
+        {/* Logo */}
         <div className="logo-header">
           <p>&lt;R.Dev/&gt;</p>
         </div>
 
+        {/* Toggle Nav */}
         <div className="toggle-nav">
           <nav>
             <ul>

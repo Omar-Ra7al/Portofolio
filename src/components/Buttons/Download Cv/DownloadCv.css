@@ -1,3 +1,6 @@
+.download-cv {
+  padding: 0;
+}
 .send-button {
   --primary: var(--main-color);
   --neutral-1: #f7f8f7;
@@ -16,7 +19,7 @@
   position: relative;
   transition: all 0.3s ease;
   min-width: 140px;
-  padding: 15px 20px;
+  padding: 12px 20px;
   font-weight: bold;
   font-family: "Galano Grotesque", Poppins, Montserrat, sans-serif;
   font-size: 16px;

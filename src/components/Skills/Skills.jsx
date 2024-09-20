@@ -14,7 +14,7 @@ import gitHubLogo from "../../assets/svgs/github.svg";
 import npmLogo from "../../assets/svgs/npm.svg";
 import { GrSwift } from "react-icons/gr";
 import { SiMediamarkt } from "react-icons/si";
-
+import { FaCode } from "react-icons/fa";
 import "../../styles/Global/Sections.css";
 import "./Skills.css";
 import SkillsParticles from "../../vendors/particles/SkillsPractilece";
@@ -24,7 +24,7 @@ import { useInView } from "react-intersection-observer";
 export default function Skills() {
   const { ref, inView } = useInView({
     triggerOnce: false, // Trigger the callback only once
-    threshold: 0.2, // Trigger when 10% of the section is visible
+    threshold: 0.01, // Trigger when 10% of the section is visible
   });
 
   return (
@@ -42,7 +42,9 @@ export default function Skills() {
 
           <SkillsParticles>
             <div className="skills-items">
-              <p className="title">Tech Stack</p>
+              <p className="title">
+                Tech Stack <FaCode />
+              </p>
               <div className="tech-wrapper">
                 <section className="languages">
                   <p className="tech-title">Languages</p>
