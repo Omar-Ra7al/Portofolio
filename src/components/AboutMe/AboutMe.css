@@ -1,39 +1,32 @@
 .aboutMe-content {
-  /* height: 100vh; */
   color: var(--text-color);
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
 .aboutMe-wrapper {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   gap: 50px;
-  overflow: hidden;
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .aboutMe-wrapper .description {
-  width: 100%;
+  width: 80%;
 }
-
-@media (max-width: 575px) {
+@media (max-width: 775px) {
   .aboutMe-wrapper .description {
-    text-align: center;
+    width: 100%;
   }
 }
-/* << Start card Container  */
 
+/* << Start card Container  */
 .aboutMe-wrapper .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin-top: 20px;
   perspective: 1200px;
 }
 .card-container .card {
@@ -47,15 +40,13 @@
   background-size: cover;
   overflow: hidden;
   transition: 0.3s;
-  /* font-size: 1.2rem; */
   transform-style: preserve-3d;
-  /* transform: rotateX(5deg) rotateY(5deg); */
+  /* transform: rotateX(-5deg) rotateY(-5deg); */
 }
-
 .card:hover {
-  transform: rotateX(10deg) rotateY(10deg);
-  /* transform: rotateX(360deg); */
+  /* Todo in projects */
   /* transform: perspective(1200px) rotateX(10deg) translateZ(-30px);  */
+  transform: rotateX(10deg) rotateY(10deg);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .card.education {
@@ -67,12 +58,11 @@
 .card.client {
   background-image: url("../../assets/imgs/Client.jpg");
 }
-
 .card-container .card-content {
   width: 100%;
   height: 100%;
   padding: 10px 30px;
-  background-color: #00000030;
+  background-color: #00000010;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +74,8 @@
   transition: 0.3s;
 }
 .card-container .card-content:hover {
-  background-color: #00000090;
+  background-color: #00000050;
+  backdrop-filter: blur(1px);
 }
 @media (max-width: 1211px) {
   .card-container .card {
@@ -97,7 +88,6 @@
     height: 200px;
   }
 }
-
 @media (max-width: 775px) {
   .card-container .card {
     min-width: 97%;

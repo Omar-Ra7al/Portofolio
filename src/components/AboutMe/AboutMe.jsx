@@ -1,20 +1,32 @@
 import "./AboutMe.css";
-import "../../styles/Global/Sections.css";
-
+import { FcAbout } from "react-icons/fc";
 import { motion } from "framer-motion";
+
 export default function AboutMe() {
   return (
     <section className="aboutMe-content">
       <div className="container">
-        <section className="title">
+        {/* << Title */}
+        <motion.section
+          className="title"
+          initial={{ x: 300 }}
+          whileInView={{ x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+          }}>
           <p>About Me</p>
-        </section>
+          <FcAbout />
+        </motion.section>
+        {/*  Title >> */}
+
         <div className="aboutMe-wrapper">
+          {/* << Description */}
           <motion.p
             className="description"
             initial={{ opacity: 0, y: -10 }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, y: 0 }}>
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 1 }}>
             With a recent degree in Management Information Systems and a passion
             for front-end development, I am driven by optimism and a commitment
             to excellence. I focus on crafting dynamic, high-performance
@@ -22,24 +34,28 @@ export default function AboutMe() {
             creativity and technical expertise to every project, ensuring
             exceptional results and continuous growth in my development career.
           </motion.p>
+          {/*  Description >> */}
 
+          {/* << Cards */}
           <div className="card-container">
             <motion.div
+              className="card education"
               initial={{ marginLeft: -50 }}
               whileInView={{ marginLeft: 0 }}
-              className="card education">
+              transition={{ type: "tween", ease: "easeInOut", duration: 0.3 }}>
               <div className="card-content">
                 <p>
-                  Graduated in 2023 with a Bachelor's in Management Information
+                  Graduated in 2023 with a Bachelor`s in Management Information
                   Systems
                 </p>
               </div>
             </motion.div>
-
+            {/*  */}
             <motion.div
+              className="card time-zone"
               initial={{ marginLeft: 100 }}
               whileInView={{ marginLeft: 0 }}
-              className="card time-zone">
+              transition={{ type: "tween", ease: "easeInOut", duration: 0.3 }}>
               <div className="card-content">
                 <p>
                   Flexible and adaptable to different time zones for seamless
@@ -47,11 +63,12 @@ export default function AboutMe() {
                 </p>
               </div>
             </motion.div>
+            {/*  */}
             <motion.div
-              initial={{ opacity: 0.2 }}
+              className="card client"
+              initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-              className="card client">
+              transition={{ delay: 0.3, duration: 1 }}>
               <div className="card-content">
                 <p>
                   Dedicated to fostering trust and open communication with
@@ -60,6 +77,7 @@ export default function AboutMe() {
               </div>
             </motion.div>
           </div>
+          {/*  Cards >> */}
         </div>
       </div>
     </section>

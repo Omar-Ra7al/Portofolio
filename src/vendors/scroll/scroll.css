@@ -1,19 +1,9 @@
 .progress-bar {
-  background-color: #3b82f6;
+  background-color: var(--main-color);
   width: 200%;
   height: 5px;
-  position: fixed; /* Keep the .progress-bar fixed */
+  position: fixed;
   left: -100%;
   top: 0;
-  z-index: 15; /* Ensure .progress-bar is on top */
-  /* box-shadow: 0 20px 35px #3b82f6; */
+  z-index: 10005;
 }
-
-/* .upper-scroll {
-  box-shadow: none;
-}
-.upper-scroll .progress-bar {
-  box-shadow: 0 0 0 0 transparent;
-  height: 5px;
-  z-index: 10000000;
-} */

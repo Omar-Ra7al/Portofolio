@@ -1,64 +1,55 @@
+/* To prevent scrool more when it hide */
 .skills-content {
-  min-height: 60vh;
+  min-height: 35vh;
+}
+@media (max-width: 591px) {
+  .skills-content {
+    min-height: 75vh;
+  }
 }
 .tsparticles-skills-container {
-  min-height: 60vh;
+  height: 100%;
+  color: var(--text-color);
 }
-@media (max-width: 575px) {
-  .skills-content {
-    min-height: 100vh;
-  }
-  .tsparticles-skills-container {
-    min-height: 100vh;
-  }
-}
-
+/* << Start Skills items Title */
 .skills-content .skills-items {
   background: var(--nav-bg-color);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(1.5px);
   padding: 20px;
   border-radius: 10px;
 }
-
 .skills-content .skills-items .title {
-  color: var(--text-color);
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
+.skills-items .title svg {
+  color: var(--main-color);
+}
+/* End Skills items Title //>> */
 
-/* Wrapper of all titles and slkills */
+/* << Start Wrapper of all titles and slkills */
 .tech-wrapper {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 50px;
 }
-
-.tech-wrapper section {
-  color: var(--text-color);
+.tech-wrapper div {
   width: 45%;
 }
-@media (max-width: 591px) {
-  .tech-wrapper section {
-    width: 100%;
-  }
-}
-
 .tech-wrapper .tech-title {
   font-size: 20px;
 }
-
 .tech-wrapper .icons {
   display: flex;
   align-items: center;
   overflow: hidden;
   padding: 10px;
 }
-
 .tech-wrapper .img-wrapper {
   width: 40px;
   height: 40px;
@@ -71,19 +62,34 @@
   overflow: hidden;
   margin-left: -10px;
 }
-
 .tech-wrapper .img-wrapper img {
   max-width: 100%;
   height: 100%;
 }
-
 .img-wrapper img.js {
   max-width: 90%;
   padding-top: 3px;
   height: 95%;
 }
-
-/* Add animation */
+@media (max-width: 591px) {
+  .tech-wrapper {
+    gap: 30px;
+  }
+  .tech-wrapper div {
+    width: 100%;
+  }
+  .tech-wrapper .tech-title {
+    font-size: 18px;
+  }
+  .techniques p {
+    font-size: 14px;
+  }
+  .tech-wrapper .img-wrapper {
+    width: 35px;
+    height: 35px;
+  }
+}
+/* << Start Animation  */
 @keyframes hideShow {
   0% {
     opacity: 0;
@@ -95,20 +101,6 @@
     opacity: 0;
   }
 }
-
-/* .tech-wrapper .icons.languages {
-  animation: hideShow 1s 1 step-end;
-}
-.tech-wrapper .icons.frameworks {
-  animation: hideShow 2.2s 1 step-end;
-}
-.tech-wrapper .icons.tools {
-  animation: hideShow 3s 1 step-end;
-}
-.tech-wrapper .icons.techniques {
-  animation: hideShow 4s 1 step-end;
-} */
-
 .tech-wrapper .icons.languages .img-wrapper:nth-of-type(1) {
   animation: hideShow 1s 1 step-end;
 }
@@ -121,7 +113,7 @@
 .tech-wrapper .icons.languages .img-wrapper:nth-of-type(4) {
   animation: hideShow 2.2s 1 step-end;
 }
-
+/*  */
 .tech-wrapper .icons.frameworks .img-wrapper:nth-of-type(1) {
   animation: hideShow 2.6s 1 step-end;
 }
@@ -137,7 +129,7 @@
 .tech-wrapper .icons.frameworks .img-wrapper:nth-of-type(5) {
   animation: hideShow 4.2s 1 step-end;
 }
-
+/*  */
 .tech-wrapper .icons.tools .img-wrapper:nth-of-type(1) {
   animation: hideShow 4.6s 1 step-end;
 }
@@ -153,10 +145,26 @@
 .tech-wrapper .icons.tools .img-wrapper:nth-of-type(5) {
   animation: hideShow 6.2s 1 step-end;
 }
-
+/*  */
 .tech-wrapper .icons.techniques .img-wrapper:nth-of-type(1) {
   animation: hideShow 6.6s 1 step-end;
 }
 .tech-wrapper .icons.techniques .img-wrapper:nth-of-type(2) {
   animation: hideShow 7s 1 step-end;
 }
+/* End Animation //>> */
+
+/* << End Wrapper of all titles and slkills */
+
+/* .tech-wrapper .icons.languages {
+  animation: hideShow 1s 1 step-end;
+}
+.tech-wrapper .icons.frameworks {
+  animation: hideShow 2.2s 1 step-end;
+}
+.tech-wrapper .icons.tools {
+  animation: hideShow 3s 1 step-end;
+}
+.tech-wrapper .icons.techniques {
+  animation: hideShow 4s 1 step-end;
+} */

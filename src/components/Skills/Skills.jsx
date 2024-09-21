@@ -1,3 +1,9 @@
+import "./Skills.css";
+
+// Vendors
+import SkillsParticles from "../../vendors/particles/SkillsPractilece";
+
+// Logos
 import html5Logo from "../../assets/svgs/html-5.svg";
 import css3Logo from "../../assets/svgs/css-3.svg";
 import javascriptLogo from "../../assets/svgs/javascript-1.svg";
@@ -12,41 +18,61 @@ import typescriptLogo from "../../assets/svgs/typescript.svg";
 import gitLogo from "../../assets/svgs/git.svg";
 import gitHubLogo from "../../assets/svgs/github.svg";
 import npmLogo from "../../assets/svgs/npm.svg";
+
+// Icons
 import { GrSwift } from "react-icons/gr";
 import { SiMediamarkt } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
-import "../../styles/Global/Sections.css";
-import "./Skills.css";
-import SkillsParticles from "../../vendors/particles/SkillsPractilece";
-import { motion } from "framer-motion";
 import { GiNinjaHeroicStance } from "react-icons/gi";
+// Components
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
 export default function Skills() {
   const { ref, inView } = useInView({
-    triggerOnce: false, // Trigger the callback only once
-    threshold: 0.01, // Trigger when 10% of the section is visible
+    triggerOnce: false,
+    threshold: 0.01,
   });
 
   return (
     <section ref={ref} className="skills-content">
       {inView ? (
         <motion.div
+          className="container"
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="container">
-          <section className="title">
+          transition={{ duration: 1 }}>
+          <motion.section
+            className="title"
+            initial={{ x: 300 }}
+            whileInView={{ x: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+            }}>
             <p>Technical Skills</p>
             <GiNinjaHeroicStance />
-          </section>
+          </motion.section>
 
           <SkillsParticles>
-            <div className="skills-items">
+            {/* Start Skills Items */}
+            <motion.div
+              className="skills-items"
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                duration: 0.3,
+              }}>
               <p className="title">
                 Tech Stack <FaCode />
               </p>
+
+              {/* << Start End Tech Wrapper */}
               <div className="tech-wrapper">
-                <section className="languages">
+                {/* languages */}
+                <div className="languages">
                   <p className="tech-title">Languages</p>
                   <div className="icons languages">
                     <div className="img-wrapper">
@@ -71,8 +97,9 @@ export default function Skills() {
                       />
                     </div>
                   </div>
-                </section>
-                <section className="frameworks">
+                </div>
+                {/* frameworks */}
+                <div className="frameworks">
                   <p className="tech-title">Frameworks</p>
                   <div className="icons frameworks">
                     <div className="img-wrapper">
@@ -92,9 +119,9 @@ export default function Skills() {
                       <img src={reduxLogo} alt="Visual Studio Code Logo" />
                     </div>
                   </div>
-                </section>
-
-                <section className="tools">
+                </div>
+                {/* tools */}
+                <div className="tools">
                   <p className="tech-title">Tools</p>
                   <div className="icons tools">
                     <div className="img-wrapper">
@@ -113,9 +140,9 @@ export default function Skills() {
                       <img src={vscLogo} alt="Visual Studio Code Logo" />
                     </div>
                   </div>
-                </section>
-
-                <section className="techniques">
+                </div>
+                {/* techniques */}
+                <div className="techniques">
                   <p className="tech-title">Techniques</p>
                   <p>Responsive Design</p>
                   <p>Performance Optimization</p>
@@ -127,9 +154,10 @@ export default function Skills() {
                       <SiMediamarkt style={{ fill: "lightgreen" }} />
                     </div>
                   </div>
-                </section>
+                </div>
               </div>
-            </div>
+              {/* End Tech Wrapper //>>  */}
+            </motion.div>
           </SkillsParticles>
         </motion.div>
       ) : (

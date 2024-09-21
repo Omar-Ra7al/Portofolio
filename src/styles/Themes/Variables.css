@@ -11,11 +11,6 @@
   --background-color: linear-gradient(135deg, #000428 0%, #004e92 100%);
   --nav-bg-color: #ffffff1a;
   --secondary-bg: #e2e8f0;
-
-  /*  Bg //>>*/
-  /* --section-bg: #001a33; */
-  /* --section-bg: #00264d; */
-  /* --section-bg: linear-gradient(135deg, #00264d 0%, #001a33 100%); */
   --section-bg: #0e133b;
 
   /* Text */
@@ -31,13 +26,12 @@
 .light-theme {
   /* nav menu to gradiant */
   --main-color-rgb: 29, 60, 125;
-
   /* Bg */
-  /* --background-color: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%); */
   /* --background-color: linear-gradient(135deg, #e0f7fa 0%, #c1e1ec 100%); */
   /* --background-color: linear-gradient(135deg, #ebf5fc 0%, #d1e8e2 100%); */
+  /* --background-color: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%); */
   --background-color: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%);
-  --nav-bg-color: #0000001a;
+  --nav-bg-color: #1d3c7d33;
   --secondary-bg: #000428;
   --section-bg: #66a6ff;
 

@@ -1,5 +1,3 @@
-import "../../styles/Global/Sections.css";
-
 export default function Projects() {
   return (
     <section className="projects">
