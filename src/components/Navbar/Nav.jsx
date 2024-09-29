@@ -19,33 +19,35 @@ export default function NavBar({ setLight }) {
         {/* Toggle Nav */}
         <div className="toggle-nav">
           <nav>
-            <ul>
-              <li>
-                <a href="#">
-                  <IoHomeOutline />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <GiNinjaHeroicStance />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FaCode />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FaUsers />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FaEnvelopeOpenText />
-                </a>
-              </li>
-            </ul>
+            <div className="container">
+              <ul>
+                <li>
+                  <a href="#">
+                    <IoHomeOutline />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <GiNinjaHeroicStance />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FaCode />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FaUsers />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FaEnvelopeOpenText />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
 
           <div className="light-dark-mode">

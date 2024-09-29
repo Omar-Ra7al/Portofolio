@@ -14,6 +14,7 @@ export default function AboutMe() {
           transition={{
             type: "spring",
             stiffness: 100,
+            duration: 0.3,
           }}>
           <p>About Me</p>
           <FcAbout />
@@ -40,9 +41,13 @@ export default function AboutMe() {
           <div className="card-container">
             <motion.div
               className="card education"
-              initial={{ marginLeft: -50 }}
-              whileInView={{ marginLeft: 0 }}
-              transition={{ type: "tween", ease: "easeInOut", duration: 0.3 }}>
+              initial={{ marginLeft: -50, opacity: 0 }}
+              whileInView={{ marginLeft: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 5,
+              }}>
               <div className="card-content">
                 <p>
                   Graduated in 2023 with a Bachelor`s in Management Information
@@ -53,9 +58,13 @@ export default function AboutMe() {
             {/*  */}
             <motion.div
               className="card time-zone"
-              initial={{ marginLeft: 100 }}
-              whileInView={{ marginLeft: 0 }}
-              transition={{ type: "tween", ease: "easeInOut", duration: 0.3 }}>
+              initial={{ marginLeft: 100, opacity: 0 }}
+              whileInView={{ marginLeft: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 5,
+              }}>
               <div className="card-content">
                 <p>
                   Flexible and adaptable to different time zones for seamless
