@@ -6,7 +6,7 @@ import { FaUsers } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 
 import LighDark from "./Themes/light-dark";
-export default function NavBar({ setLight }) {
+export default function NavBar() {
   return (
     <header>
       <div className="blur"></div>
@@ -51,7 +51,7 @@ export default function NavBar({ setLight }) {
           </nav>
 
           <div className="light-dark-mode">
-            <LighDark setLight={setLight} />
+            <LighDark />
           </div>
           <div
             className="nav-icon"

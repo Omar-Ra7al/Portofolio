@@ -3,7 +3,11 @@ import "./Logo.css";
 // Logo Img
 import lightLogo from "../../assets/logo/White-Gold.png";
 import darkLogo from "../../assets/logo/Black-Gold.png";
-export default function Logo({ theme }) {
+import { useTheme } from "../ThemeContext/ThemeContext";
+
+export default function Logo() {
+  const theme = useTheme();
+  console.log(theme);
   return (
     <div className="logo-container">
       <div className="profile-img">

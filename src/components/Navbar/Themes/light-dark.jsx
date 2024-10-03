@@ -3,25 +3,26 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { GiNightSleep } from "react-icons/gi";
 import { MdLightMode } from "react-icons/md";
+import { useSetTheme } from "../../ThemeContext/ThemeContext";
 
-export default function LighDark({ setLight }) {
-  const [theme, setTheme] = useState("light");
-
+export default function LighDark() {
+  const [light, setLight] = useState("light");
+  const setTheme = useSetTheme();
   function toggleTheme() {
-    if (theme === "light") {
-      setTheme("dark");
-      setLight(false);
+    if (light === "light") {
+      setLight("dark");
+      setTheme(false);
       document.documentElement.classList.add("light-theme");
     } else {
-      setLight(true);
-      setTheme("light");
+      setTheme(true);
+      setLight("light");
       document.documentElement.classList.remove("light-theme");
     }
   }
 
   return (
     <AnimatePresence mode="wait">
-      {theme === "dark" ? (
+      {light === "dark" ? (
         <motion.span
           key="light"
           initial={{ x: -20, opacity: 0 }}

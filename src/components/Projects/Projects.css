@@ -1,0 +1,280 @@
+/* << Start Buttons Fillter */
+.projects-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.projects-filter button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-color);
+  background-color: var(--nav-bg-color);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 10px;
+  padding: 10px 30px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px var(--nav-bg-color),
+    4px 2px 6px 0px rgb(95 157 231 / 48%);
+  cursor: pointer;
+}
+.projects-filter button:hover,
+.projects-filter button.active {
+  color: #516d91;
+  background-color: #e5edf5;
+}
+.projects-filter button:active {
+  box-shadow: none;
+  font-weight: bold;
+}
+/* End Buttons Fillter //>> */
+
+/* << Start Projects Wrapper */
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* << Start Card of Project */
+.card-wrapper {
+  position: relative;
+  width: 45%;
+  height: 400px;
+  border-radius: 10px;
+}
+@media (max-width: 991px) {
+  .card-wrapper {
+    width: 80%;
+  }
+  .projects-wrapper {
+    justify-content: center;
+  }
+}
+@media (max-width: 775px) {
+  .card-wrapper {
+    width: 100%;
+  }
+}
+
+/* << Start Date Indecator */
+.indecator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  width: 2px;
+  height: 0;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+  transition: opacity 0.3s, height 0.5s;
+}
+.card-wrapper:hover .indecator {
+  z-index: 1;
+  opacity: 1;
+  overflow: visible;
+  height: 40%;
+}
+.indecator::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  animation: pulse2 2s infinite;
+}
+.indecator span {
+  margin-top: -20px;
+  font-size: 12px;
+  text-wrap: nowrap;
+  letter-spacing: 1.5px;
+  color: var(--text-color);
+}
+/* End Date Indecator //>> */
+
+/* << Start Project Card */
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 48px rgba(0, 0, 0, 0.3);
+  transform: perspective(2000px) rotateX(20deg) translateZ(-60px);
+}
+/* << Start Image Wrapper */
+.project-card .img-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+}
+.project-card .img-wrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Active Effect */
+.img-wrapper::before,
+.img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  opacity: 0;
+  background: var(--nav-bg-color);
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px var(--main-color), 0 0 10px var(--main-color);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.project-card:hover .img-wrapper::before,
+.project-card:hover .img-wrapper::after {
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 1;
+  animation: pulse 2s infinite;
+  outline: 5px solid var(--nav-bg-color);
+}
+.img-wrapper::after {
+  width: 100px;
+  height: 100px;
+  box-shadow: inset 0 0 10px var(--light-color), 0 0 10px var(--main-color);
+}
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes pulse2 {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.3);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+/*  End Image Wrapper //>> */
+
+/* << Start Card Content  */
+.project-content {
+  position: relative;
+  min-height: 100px;
+  display: flex;
+  flex-grow: 1; /* to take The full height*/
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 20px;
+  color: var(--text-color);
+}
+.project-content .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.project-content .project-discription {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+@media (max-width: 575px) {
+  .project-content .title {
+    font-size: 18px;
+  }
+  .project-content .project-discription {
+    font-size: 13px;
+  }
+}
+/* Actions Buttons >> */
+.project-content .project-actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 20px;
+  background: var(--background-color);
+  transition: 0.3s;
+}
+.project-actions button {
+  background-color: transparent;
+  border: none;
+}
+.project-content .project-actions button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: fit-content;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 0 5px var(--text-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* End Card Content //>>  */
+
+/* End Project Card //>> */
+
+.project-card:hover .project-actions {
+  width: 100%;
+}
+
+/* End Projects Wrapper //>> */

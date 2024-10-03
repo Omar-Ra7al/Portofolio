@@ -11,11 +11,12 @@ import TypingText from "../../vendors/typingText/TypingText";
 
 // Librearey
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { useTheme } from "../ThemeContext/ThemeContext";
 
 export default function HomeJsx() {
-  const [theme, setTheme] = useState(true);
+  const theme = useTheme();
+  // const [theme, setTheme] = useState(true);
   // Use in vew to hide the commponent if it not showen
   const { ref, inView } = useInView({
     triggerOnce: false,
@@ -25,7 +26,7 @@ export default function HomeJsx() {
   return (
     <div className="home" ref={ref}>
       {/* << Nav Bar >> */}
-      <NavBar setLight={setTheme} />
+      <NavBar />
       {inView ? (
         // << Start Particlles
         <LineParticles color={theme ? "#fff" : "#000"}>

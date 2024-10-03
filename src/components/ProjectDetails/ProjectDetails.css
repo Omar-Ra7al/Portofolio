@@ -1,0 +1,106 @@
+/* << Start Project Details   */
+.project-details {
+  background: var(--background-color);
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.project-details .content .title {
+  color: var(--main-color);
+}
+.project-details .project-card {
+  width: 100%;
+}
+.project-details .project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 48px rgba(0, 0, 0, 0.3);
+  transform: perspective(2000px) rotateX(5deg) translateZ(-40px);
+}
+
+/* Img >> */
+.project-details .img-details-wrapper {
+  width: 100%;
+}
+.project-details .img-details-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Content */
+.project-details .project-content {
+  padding: 30px;
+  background: var(--background-color);
+}
+.project-details .content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.project-details .project-content .title {
+  font-size: 26px;
+}
+
+/* Date  */
+.project-content .project-date {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 15px;
+  span {
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 20px;
+}
+.feature .feature-title {
+  font-size: 18px;
+}
+@media (max-width: 575px) {
+  .feature .feature-title {
+    font-size: 18px;
+  }
+}
+.feature .languages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  span {
+    background-color: var(--background-color);
+    box-shadow: 0 0 3px var(--text-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+}
+.stars-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/* Actions Buttons >> */
+.project-details .project-actions {
+  position: relative;
+  width: 100%;
+  justify-content: start;
+  flex-wrap: wrap;
+  overflow: visible;
+  background: transparent;
+  margin-top: 15px;
+}
+.project-details .project-actions button {
+  width: 45%;
+}
+@media (max-width: 575px) {
+  .project-details .project-actions button {
+    width: 100%;
+  }
+}
+
+/* End Project Details //>>  */
