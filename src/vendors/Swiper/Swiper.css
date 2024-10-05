@@ -84,7 +84,7 @@
   }
 }
 @media (max-width: 775px) {
-  .bullet {
-    width: 25px;
+  .bullets-warpper .bullet {
+    width: 20px;
   }
 }
