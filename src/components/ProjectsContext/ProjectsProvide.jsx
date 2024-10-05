@@ -13,9 +13,10 @@ import CrudsNightMode from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNightM
 import CrudsNightMode1 from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNightMode1.png";
 import CrudsNightMode2 from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNightMode2.png";
 import CrudsNightMode3 from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNightMode3.png";
-import CrudsLightMode from "../../assets/imgs/projects/Home/Js/Cruds/CrudsLightMode.png";
+import CrudsLightMode from "../../assets/imgs/projects/Home/Js/Cruds/CrudsLIghtMode.png";
+
 //
-import QrScannerJs from "../../assets/imgs/projects/Home/Js/QrScannerjs.png";
+// import QrScannerJs from "../../assets/imgs/projects/Home/Js/QrScannerjs.png";
 import SearchEniginJs from "../../assets/imgs/projects/Home/Js/SerchEngine/SearchEniginjs.png";
 import SearchEniginJs1 from "../../assets/imgs/projects/Home/Js/SerchEngine/SearchEniginjs1.png";
 import SearchEniginJs2 from "../../assets/imgs/projects/Home/Js/SerchEngine/SearchEniginjs2.png";
@@ -38,8 +39,8 @@ import ECommerceReact from "../../assets/imgs/projects/Home/React/Ecommerce/E-Co
 import ECommerceReact2 from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact2.png";
 import ECommerceReact3 from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact3.png";
 import ECommerceReact4 from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact4.png";
-import WeatherAppReact from "../../assets/imgs/projects/Home/React/WeatherAppReact.png";
-import WeatherAppReact1 from "../../assets/imgs/projects/Home/React/WeatherAppReact1.png";
+// import WeatherAppReact from "../../assets/imgs/projects/Home/React/WeatherAppReact.png";
+// import WeatherAppReact1 from "../../assets/imgs/projects/Home/React/WeatherAppReact1.png";
 import Slider from "../../assets/imgs/projects/Home/React/Slider.png";
 // BootStrap >>
 import DecoreBootStrap from "../../assets/imgs/projects/Home/BootStrap/Decore-Bootstrap.png";
