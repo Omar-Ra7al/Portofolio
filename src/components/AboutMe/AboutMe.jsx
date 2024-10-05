@@ -1,7 +1,7 @@
 import "./AboutMe.css";
 import { FcAbout } from "react-icons/fc";
 import { motion } from "framer-motion";
-
+import CardComponent from "../Card/Card";
 export default function AboutMe() {
   return (
     <section className="aboutMe-content">
@@ -22,21 +22,25 @@ export default function AboutMe() {
         {/*  Title >> */}
 
         <div className="aboutMe-wrapper">
-          {/* << Description */}
-          <motion.p
-            className="description"
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 1 }}>
-            With a recent degree in Management Information Systems and a passion
-            for front-end development, I am driven by optimism and a commitment
-            to excellence. I focus on crafting dynamic, high-performance
-            websites using the latest technologies. My goal is to bring
-            creativity and technical expertise to every project, ensuring
-            exceptional results and continuous growth in my development career.
-          </motion.p>
-          {/*  Description >> */}
+          <div className="aboutMe-details">
+            <CardComponent />
 
+            {/* << Description */}
+            <motion.p
+              className="description"
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 1 }}>
+              With a recent degree in Management Information Systems and a
+              passion for front-end development, I am driven by optimism and a
+              commitment to excellence. I focus on crafting dynamic,
+              high-performance websites using the latest technologies. My goal
+              is to bring creativity and technical expertise to every project,
+              ensuring exceptional results and continuous growth in my
+              development career.
+            </motion.p>
+            {/*  Description >> */}
+          </div>
           {/* << Cards */}
           <div className="card-container">
             <motion.div

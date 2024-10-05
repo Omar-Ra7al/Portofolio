@@ -18,7 +18,6 @@ import Skills from "./components/Skills/Skills";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
-
 // Projects Provider
 import ProjectsContextProvider from "./components/ProjectsContext/ProjectsProvide";
 import ThemeContextProvider from "./components/ThemeContext/ThemeContext";

@@ -2,23 +2,54 @@ import { createContext, useContext } from "react";
 
 // import TodoListJs from "../../assets/imgs/projects/Home/Js/Todo-jS.png";
 import ShoppingCartJs from "../../assets/imgs/projects/Home/Js/ShopingCart-Js.png";
-import ECommerceJs from "../../assets/imgs/projects/Home/Js/E-Commerce-Js.png";
-// import CrudsLIghtMode from "../../assets/imgs/projects/Home/Js/CrudsLIghtMode.png";
-import CrudsNightMode from "../../assets/imgs/projects/Home/Js/CrudsNightMode.png";
-import GetGitRrpoJs from "../../assets/imgs/projects/Home/Js/GetGitRrpojs.png";
+import ECommerceJs from "../../assets/imgs/projects/Home/Js/Ecommerce/E-Commerce-Js.png";
+import ECommerceJs0 from "../../assets/imgs/projects/Home/Js/Ecommerce/E-Commerce-Js0.png";
+import ECommerceJs1 from "../../assets/imgs/projects/Home/Js/Ecommerce/E-Commerce-Js1.png";
+import ECommerceJs2 from "../../assets/imgs/projects/Home/Js/Ecommerce/E-Commerce-Js2.png";
+import ECommerceJs3 from "../../assets/imgs/projects/Home/Js/Ecommerce/E-Commerce-Js3.png";
+import ECommerceJs4 from "../../assets/imgs/projects/Home/Js/Ecommerce/E-Commerce-Js4.png";
+import ECommerceJs5 from "../../assets/imgs/projects/Home/Js/mobiles.png";
+import CrudsNightMode from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNightMode.png";
+import CrudsNightMode1 from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNightMode1.png";
+import CrudsNightMode2 from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNightMode2.png";
+import CrudsNightMode3 from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNightMode3.png";
+import CrudsLightMode from "../../assets/imgs/projects/Home/Js/Cruds/CrudsLightMode.png";
+//
 import QrScannerJs from "../../assets/imgs/projects/Home/Js/QrScannerjs.png";
-import SearchEniginJs from "../../assets/imgs/projects/Home/Js/SearchEniginjs.png";
-import SpaceDesignJs from "../../assets/imgs/projects/Home/Js/SpaceDesign.png";
+import SearchEniginJs from "../../assets/imgs/projects/Home/Js/SerchEngine/SearchEniginjs.png";
+import SearchEniginJs1 from "../../assets/imgs/projects/Home/Js/SerchEngine/SearchEniginjs1.png";
+import SearchEniginJs2 from "../../assets/imgs/projects/Home/Js/SerchEngine/SearchEniginjs2.png";
+import SpaceDesignJs from "../../assets/imgs/projects/Home/Js/SpaceDesign/SpaceDesign.png";
+import SpaceDesignJs1 from "../../assets/imgs/projects/Home/Js/SpaceDesign/SpaceDesign1.png";
+import SpaceDesignJs2 from "../../assets/imgs/projects/Home/Js/SpaceDesign/SpaceDesign2.png";
+import SpaceDesignJs3 from "../../assets/imgs/projects/Home/Js/SpaceDesign/SpaceDesign3.png";
+import SpaceDesignJs4 from "../../assets/imgs/projects/Home/Js/SpaceDesign/SpaceDesign4.png";
+import SpaceDesignJs5 from "../../assets/imgs/projects/Home/Js/SpaceDesign/SpaceDesign5.png";
 // Reacct Pojects >>
-import TodoListReact from "../../assets/imgs/projects/Home/React/TodoReact.png";
-import ECommerceReact from "../../assets/imgs/projects/Home/React/E-CommerceReact.png";
+import TodoListReact from "../../assets/imgs/projects/Home/React/Todos/TodoReact.png";
+import TodoListReact1 from "../../assets/imgs/projects/Home/React/Todos/TodoReact1.png";
+import TodoListReact2 from "../../assets/imgs/projects/Home/React/Todos/TodoReact2.png";
+import TodoListReact3 from "../../assets/imgs/projects/Home/React/Todos/TodoReact3.png";
+import TodoListReact4 from "../../assets/imgs/projects/Home/React/Todos/TodoReact4.png";
+import TodoListReact5 from "../../assets/imgs/projects/Home/React/Todos/TodoReact5.png";
+import TodoMuiReact from "../../assets/imgs/projects/Home/React/Todos/TodoMui.png";
+// Ecommerce
+import ECommerceReact from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact.png";
+import ECommerceReact2 from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact2.png";
+import ECommerceReact3 from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact3.png";
+import ECommerceReact4 from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact4.png";
 import WeatherAppReact from "../../assets/imgs/projects/Home/React/WeatherAppReact.png";
-import TodoMuiReact from "../../assets/imgs/projects/Home/React/TodoMui.png";
+import WeatherAppReact1 from "../../assets/imgs/projects/Home/React/WeatherAppReact1.png";
+import Slider from "../../assets/imgs/projects/Home/React/Slider.png";
 // BootStrap >>
 import DecoreBootStrap from "../../assets/imgs/projects/Home/BootStrap/Decore-Bootstrap.png";
-// import BlogBootStrap from "../../assets/imgs/projects/Home/BootStrap/Blog.png";
-// import DragonPseBootStrap from "../../assets/imgs/projects/Home/BootStrap/DragonPs.png";
+import DecoreBootStrap1 from "../../assets/imgs/projects/Home/BootStrap/Decore-Bootstrap1.png";
+import DecoreBootStrap2 from "../../assets/imgs/projects/Home/BootStrap/Decore-Bootstrap2.png";
+import DecoreBootStrap3 from "../../assets/imgs/projects/Home/BootStrap/Decore-Bootstrap3.png";
+import DecoreBootStrap4 from "../../assets/imgs/projects/Home/BootStrap/Decore-Bootstrap4.png";
 import MovieClubBootStrap from "../../assets/imgs/projects/Home/BootStrap/MovieClub.png";
+import MovieClubBootStrap1 from "../../assets/imgs/projects/Home/BootStrap/MovieClub1.png";
+import MovieClubBootStrap2 from "../../assets/imgs/projects/Home/BootStrap/MovieClub2.png";
 //
 const projectsData = [
   // Top Project 1: E-Commerce (Vanilla JS)
@@ -35,7 +66,14 @@ const projectsData = [
     frameWorks: "none",
     category: "JavaScript",
     homeImageUrl: ECommerceJs,
-    imgs: [ECommerceJs],
+    imgs: [
+      ECommerceJs0,
+      ECommerceJs1,
+      ECommerceJs2,
+      ECommerceJs3,
+      ECommerceJs4,
+      ECommerceJs5,
+    ],
     links: {
       demo: "https://omar-ra7al.github.io/E-commerce-/",
       repo: "https://github.com/Omar-Ra7al/E-commerce-.git",
@@ -58,7 +96,13 @@ const projectsData = [
     frameWorks: "React",
     category: "React",
     homeImageUrl: TodoListReact,
-    imgs: [TodoListReact],
+    imgs: [
+      TodoListReact1,
+      TodoListReact2,
+      TodoListReact3,
+      TodoListReact4,
+      TodoListReact5,
+    ],
     links: {
       demo: "https://react-interactive-todo.vercel.app/",
       repo: "https://github.com/Omar-Ra7al/React-interactive-Todo.git",
@@ -73,25 +117,39 @@ const projectsData = [
     id: 3,
     title: "React E-Commerce",
     description:
-      "E-commerce web app built with React.js, Redux Toolkit for state management, Material-UI for styling, and React Router for product details. The app includes animations and pop-ups when products are added or removed from the cart.",
+      "E-commerce web app built with React.js, Redux Toolkit for state management, The app allows users to add and remove products from the cart, displays pop-up notifications for actions like adding products, and prevents multiple additions of the same product.",
     descriptionLong:
-      "This e-commerce web application is developed entirely with Vanilla JavaScript. It is fully responsive across all devices and includes user authentication (login and account creation). Admin users can manage the product catalog through a dashboard, allowing for adding, removing, and updating products. Additional features include password updates, image management, and control over product display, ensuring a smooth user experience with no reliance on frameworks.",
+      "This e-commerce web application is developed using React.js and Redux Toolkit to manage state effectively. It simulates API interactions by fetching product data from a JSON file, providing a seamless user experience. The application is fully responsive across all devices and includes features like pop-up notifications to inform users about the status of their actions, such as adding products to the cart or restrictions on adding the same product multiple times. Users can view the total number of products in the cart, enhancing the shopping experience. The app is styled with Material-UI, ensuring a modern and attractive interface, while React Router facilitates smooth navigation between product details and other sections of the app.",
     date: "9/9/2024",
     rate: 5,
     languages: ["HTML", "CSS", "JavaScript", "React"],
-    frameWorks: "React",
+    frameworks: "React",
     category: "React",
     homeImageUrl: ECommerceReact,
-    imgs: [ECommerceReact],
+    imgs: [ECommerceReact2, ECommerceReact3, ECommerceReact4],
     links: {
       demo: "https://react-ecommerce-mqyfdahfn-omar-rahals-projects.vercel.app/",
       repo: "https://github.com/Omar-Ra7al/React-Ecommerce-App.git",
       details: "",
     },
-    tools: ["Git", "npm"],
-    features: ["Responsive Design", "Admin Dashboard", "User Authentication"],
+    tools: [
+      "Git",
+      "npm",
+      "Redux Toolkit",
+      "Material-UI",
+      "React Router",
+      "React Icons",
+    ],
+    features: [
+      "Responsive Design",
+      "Admin Dashboard",
+      "Add/Remove Products from Cart",
+      "Popup Notifications for Cart Actions",
+      "Simulated API with JSON File",
+      "Smooth Navigation with React Router",
+      "Icons for Improved UI with React Icons",
+    ],
   },
-
   //   // Project 4: Search Engine (Vanilla JS)
   {
     id: 4,
@@ -106,7 +164,7 @@ const projectsData = [
     frameWorks: "none",
     category: "JavaScript",
     homeImageUrl: SearchEniginJs,
-    imgs: [SearchEniginJs],
+    imgs: [SearchEniginJs1, SearchEniginJs2],
     links: {
       demo: "https://omar-ra7al.github.io/Images-Search-Engine/",
       repo: "https://github.com/Omar-Ra7al/Images-Search-Engine",
@@ -134,7 +192,13 @@ const projectsData = [
     frameWorks: "none",
     category: "JavaScript",
     homeImageUrl: SpaceDesignJs,
-    imgs: [SpaceDesignJs],
+    imgs: [
+      SpaceDesignJs1,
+      SpaceDesignJs2,
+      SpaceDesignJs3,
+      SpaceDesignJs4,
+      SpaceDesignJs5,
+    ],
     links: { demo: "", repo: "", details: "" },
     tools: ["JavaScript", "Git"],
     features: [
@@ -161,7 +225,7 @@ const projectsData = [
     frameWorks: "none",
     category: "JavaScript",
     homeImageUrl: CrudsNightMode,
-    imgs: [CrudsNightMode],
+    imgs: [CrudsLightMode, CrudsNightMode1, CrudsNightMode2, CrudsNightMode3],
     links: {
       demo: "https://omar-ra7al.github.io/Cruds-System/",
       repo: "https://github.com/Omar-Ra7al/Cruds-System.git",
@@ -172,52 +236,52 @@ const projectsData = [
   },
 
   // Project 7: Weather App (React)
-  {
-    id: 7,
-    title: "Weather App",
-    description:
-      "A weather app built with React that supports language switching between Arabic and English, with automatic direction adjustment.",
-    descriptionLong:
-      "This React-based weather application provides real-time weather data by fetching information from an external API. It supports language switching between Arabic and English, dynamically adjusting the layout direction (LTR/RTL) based on the selected language. The app is fully responsive and optimized for different screen sizes.",
-    date: "22/7/2024",
-    rate: 4.5,
-    languages: ["HTML", "CSS", "JavaScript", "React"],
-    frameWorks: "React",
-    category: "React",
-    homeImageUrl: WeatherAppReact,
-    imgs: [WeatherAppReact],
-    links: {
-      demo: "https://react-wheater-app.netlify.app/",
-      repo: "https://github.com/Omar-Ra7al/React-Weather-App-",
-      details: "",
-    },
-    tools: ["React", "API", "Git"],
-    features: ["Real-Time Weather", "Language Switcher", "Responsive Design"],
-  },
+  // {
+  //   id: 7,
+  //   title: "Weather App",
+  //   description:
+  //     "A weather app built with React that supports language switching between Arabic and English, with automatic direction adjustment.",
+  //   descriptionLong:
+  //     "This React-based weather application provides real-time weather data by fetching information from an external API. It supports language switching between Arabic and English, dynamically adjusting the layout direction (LTR/RTL) based on the selected language. The app is fully responsive and optimized for different screen sizes.",
+  //   date: "22/7/2024",
+  //   rate: 4.5,
+  //   languages: ["HTML", "CSS", "JavaScript", "React"],
+  //   frameWorks: "React",
+  //   category: "React",
+  //   homeImageUrl: WeatherAppReact,
+  //   imgs: [WeatherAppReact1],
+  //   links: {
+  //     demo: "https://react-wheater-app.netlify.app/",
+  //     repo: "https://github.com/Omar-Ra7al/React-Weather-App-",
+  //     details: "",
+  //   },
+  //   tools: ["React", "API", "Git"],
+  //   features: ["Real-Time Weather", "Language Switcher", "Responsive Design"],
+  // },
 
-  // Project 8: QR Code Scanner (Vanilla JS)
-  {
-    id: 8,
-    title: "QR Code Scanner",
-    description:
-      "A QR code scanner application built using Vanilla JavaScript, allowing users to scan and decode QR codes.",
-    descriptionLong:
-      "This QR code scanner is built with Vanilla JavaScript, enabling users to scan QR codes using their device's camera. The app decodes the QR code and displays the information in real-time. It is lightweight and works across various devices, providing a fast and efficient way to scan QR codes.",
-    date: "10/6/2023",
-    rate: 4,
-    languages: ["HTML", "CSS", "JavaScript"],
-    frameWorks: "none",
-    category: "JavaScript",
-    homeImageUrl: QrScannerJs,
-    imgs: [QrScannerJs],
-    links: {
-      demo: "https://omar-ra7al.github.io/QR-Scanner/",
-      repo: "https://github.com/Omar-Ra7al/QR-Scanner",
-      details: "",
-    },
-    tools: ["JavaScript", "QR API"],
-    features: ["QR Code Scanning", "Responsive Design", "Real-Time Decoding"],
-  },
+  // // Project 8: QR Code Scanner (Vanilla JS)
+  // {
+  //   id: 8,
+  //   title: "QR Code Scanner",
+  //   description:
+  //     "A QR code scanner application built using Vanilla JavaScript, allowing users to scan and decode QR codes.",
+  //   descriptionLong:
+  //     "This QR code scanner is built with Vanilla JavaScript, enabling users to scan QR codes using their device's camera. The app decodes the QR code and displays the information in real-time. It is lightweight and works across various devices, providing a fast and efficient way to scan QR codes.",
+  //   date: "10/6/2023",
+  //   rate: 4,
+  //   languages: ["HTML", "CSS", "JavaScript"],
+  //   frameWorks: "none",
+  //   category: "JavaScript",
+  //   homeImageUrl: QrScannerJs,
+  //   imgs: [QrScannerJs],
+  //   links: {
+  //     demo: "https://omar-ra7al.github.io/QR-Scanner/",
+  //     repo: "https://github.com/Omar-Ra7al/QR-Scanner",
+  //     details: "",
+  //   },
+  //   tools: ["JavaScript", "QR API"],
+  //   features: ["QR Code Scanning", "Responsive Design", "Real-Time Decoding"],
+  // },
   // Project 88: Shopping Cart (Vanilla JS)
   {
     id: 88,
@@ -232,7 +296,7 @@ const projectsData = [
     frameWorks: "none",
     category: "JavaScript",
     homeImageUrl: ShoppingCartJs,
-    imgs: [ShoppingCartJs],
+    imgs: [],
     links: { demo: "", repo: "", details: "" },
     tools: ["JavaScript", "Git"],
     features: ["Add/Remove Items", "Order Summary"],
@@ -252,7 +316,7 @@ const projectsData = [
     frameWorks: "Bootstrap",
     category: "Css",
     homeImageUrl: MovieClubBootStrap,
-    imgs: [MovieClubBootStrap],
+    imgs: [MovieClubBootStrap1, MovieClubBootStrap2],
     links: {
       demo: "https://omar-ra7al.github.io/Movie-Club/",
       repo: "https://github.com/Omar-Ra7al/Movie-Club",
@@ -276,7 +340,7 @@ const projectsData = [
     frameWorks: "React, Material-UI",
     category: "React",
     homeImageUrl: TodoMuiReact,
-    imgs: [TodoMuiReact],
+    imgs: [],
     links: {
       demo: "https://mui-react-todolist.netlify.app/",
       repo: "https://github.com/omar-ra7al/React-MUI-Todo-List",
@@ -300,7 +364,12 @@ const projectsData = [
     frameWorks: "Bootstrap",
     category: "Css",
     homeImageUrl: DecoreBootStrap,
-    imgs: [DecoreBootStrap],
+    imgs: [
+      DecoreBootStrap1,
+      DecoreBootStrap2,
+      DecoreBootStrap3,
+      DecoreBootStrap4,
+    ],
     links: {
       demo: "https://omar-ra7al.github.io/Landing-2-intern-ship/",
       repo: "https://github.com/omar-ra7al/Landing-2-intern-ship",
@@ -312,26 +381,33 @@ const projectsData = [
 
   // Project 12: Get GitHub Repos (Vanilla JS)
   {
-    id: 12,
-    title: "Get GitHub Repositories",
+    id: 13, // Unique ID for the Swiper project
+    title: "Reusable Swiper Component",
     description:
-      "A tool to fetch and display GitHub repositories using the GitHub API, built with Vanilla JavaScript.",
+      "A reusable, responsive image slider for React applications with manual and automatic sliding features.",
     descriptionLong:
-      "This project allows users to fetch and display GitHub repositories by entering a username. Built with Vanilla JavaScript, the tool connects to the GitHub API, retrieves repository information, and displays it in an easy-to-read format. It offers smooth API interaction and a user-friendly interface.",
-    date: "20/7/2023",
-    rate: 4,
-    languages: ["HTML", "CSS", "JavaScript"],
-    frameWorks: "none",
-    category: "JavaScript",
-    homeImageUrl: GetGitRrpoJs,
-    imgs: [GetGitRrpoJs],
+      "The Swiper component is designed as a highly reusable and customizable image slider for React applications. This component accepts a dynamic set of child elements (usually images), making it adaptable to different content needs across your project. It provides bullet indicators for navigation, manual next/previous arrows, and supports automatic sliding with customizable intervals.",
+    date: "25/9/2023", // Date of creation
+    rate: 5, // Rating out of 5
+    languages: ["HTML", "CSS", "JavaScript", "React"],
+    frameWorks: "None",
+    category: "React", // Project category
+    homeImageUrl: Slider, // Image for project homepage
+    imgs: [], // Images used in the project
     links: {
-      demo: "https://omar-ra7al.github.io/Get-Repo/",
-      repo: "https://github.com/omar-ra7al/Get-Repo",
-      details: "",
+      demo: "https://react-swiper-delta.vercel.app/",
+      repo: "https://github.com/omar-ra7al/Swiper-Component", // Replace with correct repository link
+      details: "", // If more details are available, link them here
     },
-    tools: ["GitHub API", "JavaScript"],
-    features: ["GitHub API Integration", "Fetch Data", "Responsive Design"],
+    tools: ["React", "JavaScript"],
+    features: [
+      "Reusable and customizable image slider",
+      "Manual navigation with next/previous arrows",
+      "Automatic sliding with customizable intervals",
+      "Dynamic bullet indicators for slide navigation",
+      "Responsive design for various screen sizes",
+      "Easily integrates into different parts of your project",
+    ],
   },
 ];
 const projectsDataContext = createContext([]);

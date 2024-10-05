@@ -10,12 +10,22 @@
   align-items: center;
   justify-content: space-between;
 }
+.aboutMe-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
 .aboutMe-wrapper .description {
-  width: 80%;
+  flex: 1;
 }
 @media (max-width: 775px) {
+  .aboutMe-details {
+    gap: 30px;
+  }
   .aboutMe-wrapper .description {
-    width: 100%;
+    min-width: 100%;
   }
 }
 

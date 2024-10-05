@@ -1,12 +1,31 @@
-import { useParams } from "react-router-dom";
+// Css >>
+import "./ProjectDetails.css";
+
+// Component >>
+import NavBar from "../Navbar/Nav";
 import { useProjectsData } from "../ProjectsContext/ProjectsProvide";
-import { motion } from "framer-motion";
+import Swiper from "../../vendors/Swiper/Swiper";
+
+// React >>
+import { useEffect } from "react";
+// React Router >>
+import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
+// React Icon >>
 import { FaGithub } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
 import { FaStar } from "react-icons/fa6";
-import "./ProjectDetails.css";
-import NavBar from "../Navbar/Nav";
+
+// Framer Motion
+import { motion } from "framer-motion";
+
 export default function PojectDetails() {
+  // Start Page from top >> prevent react router un expected behavior
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top whenever the path changes
+  }, [pathname]);
+
   const { projectId } = useParams();
   const projectsData = useProjectsData();
   const projectDetails = projectsData.filter((project) => {
@@ -26,7 +45,9 @@ export default function PojectDetails() {
     return (
       <div key={project.id} className="container">
         <section className="title">
-          <p>{project.title}</p>
+          <p>
+            {project.id}/ {project.title}
+          </p>
         </section>
         <motion.div
           key={project.id}
@@ -35,11 +56,20 @@ export default function PojectDetails() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}>
           {/*  */}
-          <div className="project-card">
+          <div className="project-card active">
             {/*  */}
-            <div className="img-details-wrapper">
-              <img src={project.homeImageUrl} alt={project.title} />
-            </div>
+            <Swiper autoSlide={true} slideTime={5000}>
+              <div className="img-details-wrapper">
+                <img src={project.homeImageUrl} alt={project.title} />
+              </div>
+              {project.imgs.map((img) => {
+                return (
+                  <div key={img} className="img-details-wrapper">
+                    <img src={img} alt="" />{" "}
+                  </div>
+                );
+              })}
+            </Swiper>
             {/*  */}
             <div className="project-content">
               <div className="content">

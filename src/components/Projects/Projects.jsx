@@ -3,7 +3,6 @@ import Loader from "../../vendors/Loader/Loader";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useProjectsData } from "../ProjectsContext/ProjectsProvide";
-
 // Css
 import "./Projects.css";
 // React icons
@@ -46,9 +45,10 @@ export default function Projects() {
               <span>{project.date}</span>
             </div>
             <div className="project-card">
-              <div className="img-wrapper">
-                <img src={project.homeImageUrl} alt={project.title} />
-              </div>
+                <div className="img-wrapper">
+                  <img src={project.homeImageUrl} alt={project.title} />
+                </div>
+
               <div className="project-content">
                 <div className="content">
                   <p className="title">{project.title}</p>

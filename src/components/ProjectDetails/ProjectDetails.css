@@ -2,29 +2,34 @@
 .project-details {
   background: var(--background-color);
   min-height: 100vh;
-  padding: 100px 0;
+  padding: 50px 0;
 }
-
 .project-details .content .title {
   color: var(--main-color);
 }
 .project-details .project-card {
   width: 100%;
+  transform: perspective(2000px);
+}
+.project-details .project-card.active {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 48px rgba(0, 0, 0, 0.3);
+  transform: perspective(2000px) rotateX(5deg) translateZ(-20px);
 }
 .project-details .project-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 48px rgba(0, 0, 0, 0.3);
-  transform: perspective(2000px) rotateX(5deg) translateZ(-40px);
+  transform: perspective(2000px) rotateX(1deg) translateZ(-10px);
 }
-
 /* Img >> */
-.project-details .img-details-wrapper {
+/* .project-details .img-details-wrapper {
   width: 100%;
+  min-height: 200px;
+  max-height: 600px;
 }
-.project-details .img-details-wrapper img {
-  max-width: 100%;
-  height: auto;
-}
+*/
 
+.project-details .img-details-wrapper img {
+  width: 100%;
+  max-height: 660px !important;
+}
 /* Content */
 .project-details .project-content {
   padding: 30px;
