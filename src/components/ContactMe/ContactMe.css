@@ -36,6 +36,10 @@
   .form {
     width: 100%;
   }
+  .social {
+    box-shadow: -10px 10px 10px var(--dark-color);
+    transform: rotateY(25deg) rotateX(5deg) translateZ(-30px);
+  }
 }
 .form:hover {
   transform: rotateY(25deg) rotateX(5deg) translateZ(-30px);
@@ -72,6 +76,7 @@
   max-height: 200px;
 }
 
+/* << Start Social Buttons */
 .social-buttons {
   display: flex;
   flex-wrap: wrap; /* Allows buttons to wrap if there isn't enough space */
@@ -121,3 +126,4 @@
   border-top: 2px solid var(--main-color);
   background-color: transparent;
 }
+/* End Social Buttons //>> */
