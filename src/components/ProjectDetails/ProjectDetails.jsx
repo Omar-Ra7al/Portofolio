@@ -59,12 +59,12 @@ export default function PojectDetails() {
           <div className="project-card active">
             {/*  */}
             <Swiper autoSlide={true} slideTime={5000}>
-              <div className="img-details-wrapper">
+              <div className="img-details-wrapper slide">
                 <img src={project.homeImageUrl} alt={project.title} />
               </div>
               {project.imgs.map((img) => {
                 return (
-                  <div key={img} className="img-details-wrapper">
+                  <div key={img} className="img-details-wrapper slide">
                     <img src={img} alt="" />{" "}
                   </div>
                 );

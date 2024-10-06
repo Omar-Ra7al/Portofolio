@@ -20,6 +20,15 @@
 .aboutMe-wrapper .description {
   flex: 1;
 }
+.aboutMe-wrapper .description span {
+  color: var(--main-color);
+  margin: 0 5px;
+}
+@media (max-width: 991px) {
+  .aboutMe-details {
+    gap: 30px;
+  }
+}
 @media (max-width: 775px) {
   .aboutMe-details {
     gap: 30px;

@@ -9,11 +9,6 @@
 .card-descripe {
   height: 100%;
   border-radius: 50px;
-  background: linear-gradient(
-    135deg,
-    rgb(0, 255, 214) 0%,
-    rgb(8, 226, 96) 100%
-  );
 
   background: var(--background-color);
   transition: all 0.5s ease-in-out;
@@ -41,6 +36,7 @@
   border-bottom: 1px solid white;
   transition: all 0.5s ease-in-out;
 }
+
 .card-descripe img {
   border-radius: 50%;
   width: 60px;
@@ -53,16 +49,13 @@
 
 .descripe-content .descripe-title {
   display: block;
-  color: #00894d;
   color: var(--text-color);
-
-  font-weight: 900;
-  font-size: 20px;
+  font-weight: bolder;
+  font-size: 22px;
 }
 
 .descripe-content .text {
   display: block;
-  color: rgba(0, 137, 78, 0.76);
   color: var(--text-color);
   display: flex;
   gap: 10px;
@@ -140,7 +133,6 @@
 .bottom .social-buttons-container .social-button .icon {
   width: 15px;
   height: 15px;
-  color: #00894d;
   color: var(--main-color);
 }
 
@@ -153,12 +145,11 @@
 }
 
 .bottom .social-buttons-container .social-button:active {
-  background: rgb(255, 234, 0);
   background: var(--text-color);
 }
 
 .bottom .social-buttons-container .social-button:active .icon {
-  color: #00894d;
+  color: var(--main-color);
 }
 
 .descripe-logo {
@@ -232,13 +223,13 @@
 
 .parent:hover .card-descripe {
   transform: rotate3d(1, 1, 0, 30deg);
-  box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px,
-    rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
+  box-shadow: rgba(59, 130, 246, 0.3) 30px 50px 25px -40px,
+    rgba(59, 130, 246, 0.1) 0px 25px 30px 0px;
 }
 
 .parent:hover .card-descripe .bottom .social-buttons-container .social-button {
   transform: translate3d(0, 0, 50px);
-  box-shadow: rgba(5, 71, 17, 0.2) -5px 20px 10px 0px;
+  box-shadow: rgba(59, 130, 246, 0.2) -5px 20px 10px 0px;
 }
 
 .parent:hover .card-descripe .descripe-logo .circle2 {

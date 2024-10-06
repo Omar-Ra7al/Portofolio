@@ -1,0 +1,123 @@
+.contact {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: var(--text-color);
+  perspective: 2000px;
+}
+.contact-me section.title {
+  margin: 0 auto;
+  width: 100%;
+  flex-direction: column;
+}
+.form,
+.social {
+  perspective: 2000px;
+  background: var(--background-color);
+  width: 45%;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+  height: 400px;
+  box-shadow: -10px 10px 10px var(--dark-color);
+  transform: rotateY(25deg) rotateX(5deg) translateZ(-30px);
+  overflow: hidden;
+}
+.social {
+  transform: rotateY(-25deg) rotateX(5deg) translateZ(-30px);
+  box-shadow: 10px 10px 10px var(--dark-color);
+}
+@media (max-width: 775px) {
+  .social,
+  .form {
+    width: 100%;
+  }
+}
+.form:hover {
+  transform: rotateY(25deg) rotateX(5deg) translateZ(-30px);
+  /* transform: translateY(5px) translateZ(-10px); */
+}
+.form-title {
+  font-size: 24px;
+}
+.social .form-title {
+  margin-bottom: 30px;
+}
+.fields-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+.feild-container {
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.form textarea {
+  max-height: 200px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap if there isn't enough space */
+  gap: 15px; /* Space between buttons */
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.social-btn {
+  display: flex;
+  justify-content: center;
+
+  align-items: center; /* Center-align items */
+  background-color: var(--main-color); /* Default background color */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center; /* Center the text */
+  width: 45%;
+  transition: 0.3s;
+  box-shadow: 2px 5px 2px var(--main-color);
+  border-top: 2px solid transparent;
+  border: 2px solid var(--light-color);
+  transform-style: preserve-3d;
+}
+
+.social-btn a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center; /* Center-align items */
+}
+
+.social-name {
+  margin-top: 5px; /* Space between icon and name */
+  font-size: 14px; /* Font size for the name */
+}
+
+.social-btn:hover {
+  background-color: var(--nav-bg-color); /* Hover background color */
+  transform: rotateY(-5deg) rotateX(15deg) translateZ(10px);
+  box-shadow: 5px 8px 5px var(--main-color);
+  border-top: 2px solid var(--main-color);
+  background-color: transparent;
+}

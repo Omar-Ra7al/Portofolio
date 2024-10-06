@@ -18,9 +18,12 @@ import Skills from "./components/Skills/Skills";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
+import Footer from "./components/Footer/Footer";
 // Projects Provider
 import ProjectsContextProvider from "./components/ProjectsContext/ProjectsProvide";
 import ThemeContextProvider from "./components/ThemeContext/ThemeContext";
+import Testimonials from "./components/Testimonials/Testimonials";
+import ContactMe from "./components/ContactMe/ContactMe";
 
 function App() {
   // << Start Loader
@@ -53,6 +56,9 @@ function App() {
                       <AboutMe />
                       <Skills />
                       <Projects />
+                      <Testimonials />
+                      <ContactMe />
+                      <Footer />
                     </div>
                   )}
                 </div>

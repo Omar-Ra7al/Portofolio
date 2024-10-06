@@ -31,13 +31,27 @@ export default function AboutMe() {
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1 }}>
-              With a recent degree in Management Information Systems and a
+              {/* With a recent degree in Management Information Systems and a
               passion for front-end development, I am driven by optimism and a
               commitment to excellence. I focus on crafting dynamic,
               high-performance websites using the latest technologies. My goal
               is to bring creativity and technical expertise to every project,
               ensuring exceptional results and continuous growth in my
-              development career.
+              development career. */}
+              With a recent degree in Management Information Systems and a
+              passion for front-end development, I am driven by optimism and a
+              commitment to excellence. As the owner of a PlayStation shop with
+              over 6 years of experience in this feild, I have developed strong
+              skills in customer service, sales, and marketing.learning the
+              importance of user-friendly environments and strong relationships.
+              I focus on crafting dynamic, high-performance websites using the
+              latest technologies. Currently, I am enhancing my skills by
+              <span>Front-end training in [ Webmasters Company ].</span>
+              My goal is to bring creativity and technical expertise to every
+              project. I believe in the power of technology to transform ideas
+              into reality and am always eager to learn new skills and explore
+              innovative solutions. Feel free to check out my portfolio to see
+              some of my work!
             </motion.p>
             {/*  Description >> */}
           </div>

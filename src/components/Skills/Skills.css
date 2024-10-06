@@ -19,11 +19,20 @@
   border-radius: 10px;
 }
 .skills-content .skills-items .title {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   gap: 10px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  background: linear-gradient(
+    180deg,
+    var(--main-color) 30%,
+    var(--text-color) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .skills-items .title svg {
   color: var(--main-color);
@@ -42,20 +51,22 @@
   width: 45%;
 }
 .tech-wrapper .tech-title {
-  font-size: 20px;
+  font-size: 23px;
 }
 .tech-wrapper .icons {
   display: flex;
   align-items: center;
-  overflow: hidden;
   padding: 10px;
+  width: 100%;
 }
 .tech-wrapper .img-wrapper {
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: var(--main-color);
+  width: 45px;
+  height: 45px;
+  padding: 6px;
   border-radius: 50%;
+  background-color: var(--main-color);
+  background: var(--background-color);
+  /* box-shadow: 1px 1px 4px var(--main-color); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,14 +90,14 @@
     width: 100%;
   }
   .tech-wrapper .tech-title {
-    font-size: 18px;
+    font-size: 22px;
   }
   .techniques p {
     font-size: 14px;
   }
   .tech-wrapper .img-wrapper {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
   }
 }
 /* << Start Animation  */

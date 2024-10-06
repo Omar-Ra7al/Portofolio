@@ -12,8 +12,8 @@ export default function Swiper({
   const [slide, setSlide] = useState(0);
 
   // Bullets
-
   let bullets = [];
+
   if (childrenCount > 1) {
     for (let i = 0; i < childrenCount; i++) {
       bullets.push(
@@ -47,6 +47,8 @@ export default function Swiper({
     if (slide < childrenCount - 1) {
       setSlide(slide + 1);
     }
+    // Children.forEach((img) => {
+    // });
   };
   const slideLeft = () => {
     if (slide > 0) {
