@@ -19,6 +19,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 import Footer from "./components/Footer/Footer";
+import NavBar from "./components/Navbar/Nav";
 // Projects Provider
 import ProjectsContextProvider from "./components/ProjectsContext/ProjectsProvide";
 import ThemeContextProvider from "./components/ThemeContext/ThemeContext";
@@ -42,34 +43,37 @@ function App() {
     <Router>
       <ProjectsContextProvider>
         <ThemeContextProvider>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <div className="content">
-                  {showLoader ? (
-                    <Loader />
-                  ) : (
-                    <div>
-                      <ScrollCounter />
-                      <HomeJsx />
-                      <AboutMe />
-                      <Skills />
-                      <Projects />
-                      <Testimonials />
-                      <ContactMe />
-                      <Footer />
+          {showLoader ? (
+            <Loader />
+          ) : (
+            <>
+              <NavBar />
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <div className="content">
+                      <div>
+                        <ScrollCounter />
+                        <HomeJsx />
+                        <AboutMe />
+                        <Skills />
+                        <Projects />
+                        <Testimonials />
+                        <ContactMe />
+                      </div>
                     </div>
-                  )}
-                </div>
-              }
-            />
+                  }
+                />
 
-            <Route
-              path="/projects/project/:projectId"
-              element={<ProjectDetails />}
-            />
-          </Routes>
+                <Route
+                  path="/projects/project/:projectId"
+                  element={<ProjectDetails />}
+                />
+              </Routes>
+              <Footer />
+            </>
+          )}
         </ThemeContextProvider>
       </ProjectsContextProvider>
     </Router>

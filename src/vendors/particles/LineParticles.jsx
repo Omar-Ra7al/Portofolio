@@ -4,7 +4,7 @@ import { loadSlim } from "tsparticles-slim";
 
 const ParticlesComponent = ({ color, children }) => {
   const getParticlesOptions = (screenWidth) => {
-    const particleNumber = screenWidth > 768 ? 50 : 30; // Adjust numbers based on your needs
+    const particleNumber = screenWidth > 768 ? 60 : 40; // Adjust numbers based on your needs
     const linkDistance = screenWidth > 768 ? 150 : 100; // Adjust distance based on screen width
 
     return {

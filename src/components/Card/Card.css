@@ -129,15 +129,23 @@
 .bottom .social-buttons-container .social-button:nth-child(3) {
   transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.8s;
 }
+.bottom .social-buttons-container .social-button:nth-child(4) {
+  transition: transform 0.2s ease-in-out 1s, box-shadow 0.2s ease-in-out 0.8s;
+}
+.bottom .social-buttons-container .social-button:nth-child(5) {
+  transition: transform 0.2s ease-in-out 1.2s, box-shadow 0.2s ease-in-out 0.8s;
+}
 
 .bottom .social-buttons-container .social-button .icon {
   width: 15px;
   height: 15px;
   color: var(--main-color);
+  rotate: 90deg;
 }
 
 .bottom .social-buttons-container .social-button:hover {
   background: black;
+  transition: 0.3s;
 }
 
 .bottom .social-buttons-container .social-button:hover .icon {
@@ -223,8 +231,8 @@
 
 .parent:hover .card-descripe {
   transform: rotate3d(1, 1, 0, 30deg);
-  box-shadow: rgba(59, 130, 246, 0.3) 30px 50px 25px -40px,
-    rgba(59, 130, 246, 0.1) 0px 25px 30px 0px;
+  box-shadow: 20px 50px 55px -40px rgba(59, 130, 246, 0.3),
+    0px 25px 10px 0px rgba(59, 130, 246, 0.1);
 }
 
 .parent:hover .card-descripe .bottom .social-buttons-container .social-button {

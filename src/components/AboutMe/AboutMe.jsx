@@ -1,10 +1,15 @@
+// Css
 import "./AboutMe.css";
+// React Icons
 import { FcAbout } from "react-icons/fc";
+// Framer Motion
 import { motion } from "framer-motion";
+// Components
 import CardComponent from "../Card/Card";
+
 export default function AboutMe() {
   return (
-    <section className="aboutMe-content">
+    <section id="about" className="aboutMe-content">
       <div className="container">
         {/* << Title */}
         <motion.section
@@ -22,15 +27,15 @@ export default function AboutMe() {
         {/*  Title >> */}
 
         <div className="aboutMe-wrapper">
-          <div className="aboutMe-details">
+          <motion.div
+            className="aboutMe-details"
+            initial={{ opacity: 0, y: -60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}>
             <CardComponent />
 
             {/* << Description */}
-            <motion.p
-              className="description"
-              initial={{ opacity: 0, y: -10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 1 }}>
+            <motion.p className="description">
               {/* With a recent degree in Management Information Systems and a
               passion for front-end development, I am driven by optimism and a
               commitment to excellence. I focus on crafting dynamic,
@@ -54,18 +59,14 @@ export default function AboutMe() {
               some of my work!
             </motion.p>
             {/*  Description >> */}
-          </div>
+          </motion.div>
           {/* << Cards */}
           <div className="card-container">
             <motion.div
               className="card education"
-              initial={{ marginLeft: -50, opacity: 0 }}
+              initial={{ marginLeft: -10, opacity: 0 }}
               whileInView={{ marginLeft: 0, opacity: 1 }}
-              transition={{
-                type: "spring",
-                stiffness: 150,
-                damping: 5,
-              }}>
+              transition={{ duration: 0.5, ease: "easeInOut" }}>
               <div className="card-content">
                 <p>
                   Graduated in 2023 with a Bachelor`s in Management Information
@@ -76,13 +77,9 @@ export default function AboutMe() {
             {/*  */}
             <motion.div
               className="card time-zone"
-              initial={{ marginLeft: 100, opacity: 0 }}
+              initial={{ marginLeft: 20, opacity: 0 }}
               whileInView={{ marginLeft: 0, opacity: 1 }}
-              transition={{
-                type: "spring",
-                stiffness: 150,
-                damping: 5,
-              }}>
+              transition={{ duration: 0.5, ease: "easeInOut" }}>
               <div className="card-content">
                 <p>
                   Flexible and adaptable to different time zones for seamless
@@ -95,7 +92,7 @@ export default function AboutMe() {
               className="card client"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.3, duration: 1 }}>
+              transition={{ delay: 0.3, duration: 1, ease: "easeInOut" }}>
               <div className="card-content">
                 <p>
                   Dedicated to fostering trust and open communication with

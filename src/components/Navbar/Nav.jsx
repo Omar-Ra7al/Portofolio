@@ -1,19 +1,40 @@
+// Css
 import "./Nav.css";
+
+// React Icons
 import { IoHomeOutline } from "react-icons/io5";
 import { GiNinjaHeroicStance } from "react-icons/gi";
 import { FaEnvelopeOpenText } from "react-icons/fa6";
-import { FaUsers } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
+import { FaUsers, FaCode } from "react-icons/fa";
+import { MdPerson } from "react-icons/md";
 
+import { Link } from "react-router-dom";
 import LighDark from "./Themes/light-dark";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 export default function NavBar() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    // Scroll to the element when the component mounts or when the hash changes
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]); // Add hash to the dependency array
+
   return (
     <header>
       <div className="blur"></div>
       <div className="container">
         {/* Logo */}
         <div className="logo-header">
-          <p>&lt;R.Dev/&gt;</p>
+          <Link to={"/#home"}>
+            <p>&lt;R.Dev/&gt;</p>
+          </Link>
         </div>
 
         {/* Toggle Nav */}
@@ -22,29 +43,34 @@ export default function NavBar() {
             <div className="container">
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to={"/#home"}>
                     <IoHomeOutline />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to={"/#about"}>
+                    <MdPerson />
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/#skills"}>
                     <GiNinjaHeroicStance />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to={"/#projects"}>
                     <FaCode />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to={"/#testimonials"}>
                     <FaUsers />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to={"/#contact"}>
                     <FaEnvelopeOpenText />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

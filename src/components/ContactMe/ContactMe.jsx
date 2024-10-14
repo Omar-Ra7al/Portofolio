@@ -1,4 +1,7 @@
+// Css
 import "./ContactMe.css";
+
+// React Icons
 import {
   FaGithub,
   FaLinkedin,
@@ -6,19 +9,33 @@ import {
   FaInstagram,
   FaTwitter,
   FaWhatsapp,
+  FaEnvelopeOpenText,
 } from "react-icons/fa";
-import { FaEnvelopeOpenText } from "react-icons/fa6";
+// Framer Motion
+import { motion } from "framer-motion";
+
 export default function ContactMe() {
   return (
-    <section className="contact-me">
+    <section id="contact" className="contact-me">
       <div className="container">
-        <section className="title">
+        <motion.section
+          className="title"
+          initial={{ y: -100 }}
+          whileInView={{ y: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            duration: 0.3,
+          }}>
           <p>Get in Touch</p>
           <FaEnvelopeOpenText />
-        </section>
-
+        </motion.section>
         <div className="contact">
-          <div className="form">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="form">
             <p className="form-title">Don’t hesitate to call me</p>
             <div className="fields-wrapper">
               <div className="feild-container">
@@ -46,8 +63,12 @@ export default function ContactMe() {
                   placeholder="What’s on your mind? Feel free to ask or share!"></textarea>
               </div>
             </div>
-          </div>
-          <div className="social">
+          </motion.div>
+          <motion.div
+            className="social"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}>
             <div className="form-title">Do U Like Another Social ??</div>
             <div className="social-buttons">
               <div className="social-btn">
@@ -105,7 +126,7 @@ export default function ContactMe() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

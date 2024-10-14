@@ -1,16 +1,24 @@
+// React Hooks
 import { useState, useMemo } from "react";
+
+// Components
 import Loader from "../../vendors/Loader/Loader";
+import { useProjectsData } from "../ProjectsContext/ProjectsProvide";
+
+// Libraries
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useProjectsData } from "../ProjectsContext/ProjectsProvide";
+
 // Css
 import "./Projects.css";
-// React icons
+
+// React Icons
 import { FaLaptopCode } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
 import { BsCardText } from "react-icons/bs";
 
+// Assets
 import GitHub from "../../assets/imgs/GitHub.jpeg";
 
 // Projects Data >>>>
@@ -29,11 +37,9 @@ export default function Projects() {
   };
 
   // Projects JSX >>>>
-  let projectsDataNumber = [];
   const projectsJsx = useMemo(() => {
     return projectsData.map((project) => {
       if (project.category === category || category === "All") {
-        projectsDataNumber.push(project);
         return (
           <motion.div
             key={project.id}
@@ -45,9 +51,9 @@ export default function Projects() {
               <span>{project.date}</span>
             </div>
             <div className="project-card">
-                <div className="img-wrapper">
-                  <img src={project.homeImageUrl} alt={project.title} />
-                </div>
+              <div className="img-wrapper">
+                <img src={project.homeImageUrl} alt={project.title} />
+              </div>
 
               <div className="project-content">
                 <div className="content">
@@ -84,13 +90,20 @@ export default function Projects() {
   }, [projectsData, category]); // Recompute when projectsData or category changes
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="container">
-        <section className="title">
+        <motion.section
+          className="title"
+          initial={{ x: 300 }}
+          whileInView={{ x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            duration: 0.3,
+          }}>
           <p>Projects</p>
           <FaLaptopCode />
-        </section>
-
+        </motion.section>
         {/* << Start Projects Filter */}
         <div className="projects-filter">
           <button
@@ -135,9 +148,6 @@ export default function Projects() {
                 initial={{ y: -50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                style={
-                  projectsDataNumber.length % 2 == 0 ? { margin: "0 auto" } : ""
-                }
                 className="card-wrapper">
                 <div className="indecator">
                   <span>Updated</span>

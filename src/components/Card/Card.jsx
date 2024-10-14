@@ -1,11 +1,21 @@
+// Css
 import "./Card.css";
+
+// Assets
 import logo from "../../assets/logo/White-Gold.png";
-// import { FaLaptopCode } from "react-icons/fa";
+
+// React Icons
+import {
+  FaLaptopCode,
+  // FaStar,
+  FaTwitter,
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaGithub,
+} from "react-icons/fa"; // Social icons
 // import { GiEgyptianProfile } from "react-icons/gi";
-// import { FaStar } from "react-icons/fa";
 // import { FiCamera } from "react-icons/fi";
-import { FaLaptopCode } from "react-icons/fa";
-import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa"; // Social icons
 
 export default function CardComponent() {
   return (
@@ -70,9 +80,12 @@ export default function CardComponent() {
             <button className="social-button social-button3">
               <FaGithub className="icon" size={30} />
             </button>
-          </div>
-          <div className="view-more">
-            <button className="view-more-button">View more</button>
+            <button className="social-button social-button4">
+              <FaFacebook className="icon" size={30} />
+            </button>
+            <button className="social-button social-button5">
+              <FaWhatsapp className="icon" size={30} />
+            </button>
           </div>
         </div>
       </div>

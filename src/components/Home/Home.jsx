@@ -1,7 +1,7 @@
+// Css
 import "./Home.css";
 
 // Components
-import NavBar from "../Navbar/Nav";
 import Logo from "../Logo/Logo";
 import CvBtn from "../Buttons/Download Cv/DownloadCv";
 
@@ -9,7 +9,7 @@ import CvBtn from "../Buttons/Download Cv/DownloadCv";
 import LineParticles from "../../vendors/particles/LineParticles";
 import TypingText from "../../vendors/typingText/TypingText";
 
-// Librearey
+// Libraries
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTheme } from "../ThemeContext/ThemeContext";
@@ -24,9 +24,8 @@ export default function HomeJsx() {
   });
 
   return (
-    <div className="home" ref={ref}>
+    <div id="home" className="home" ref={ref}>
       {/* << Nav Bar >> */}
-      <NavBar />
       {inView ? (
         // << Start Particlles
         <LineParticles color={theme ? "#fff" : "#000"}>

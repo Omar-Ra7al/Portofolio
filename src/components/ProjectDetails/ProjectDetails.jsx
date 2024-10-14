@@ -2,7 +2,6 @@
 import "./ProjectDetails.css";
 
 // Component >>
-import NavBar from "../Navbar/Nav";
 import { useProjectsData } from "../ProjectsContext/ProjectsProvide";
 import Swiper from "../../vendors/Swiper/Swiper";
 
@@ -139,10 +138,5 @@ export default function PojectDetails() {
   });
 
   console.log(projectDetails);
-  return (
-    <section className="project-details">
-      <NavBar />
-      {projectsJsx}
-    </section>
-  );
+  return <section className="project-details">{projectsJsx}</section>;
 }

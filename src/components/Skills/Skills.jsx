@@ -35,25 +35,24 @@ export default function Skills() {
   });
 
   return (
-    <section ref={ref} className="skills-content">
-      {inView ? (
-        <motion.div
-          className="container"
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}>
-          <motion.section
-            className="title"
-            initial={{ x: 300 }}
-            whileInView={{ x: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-            }}>
-            <p>Technical Skills</p>
-            <GiNinjaHeroicStance />
-          </motion.section>
-
+    <section id="skills" ref={ref} className="skills-content">
+      <motion.div
+        className="container"
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}>
+        <motion.section
+          className="title"
+          initial={{ x: 300 }}
+          whileInView={{ x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+          }}>
+          <p>Technical Skills</p>
+          <GiNinjaHeroicStance />
+        </motion.section>
+        {inView ? (
           <SkillsParticles>
             {/* Start Skills Items */}
             <motion.div
@@ -159,10 +158,10 @@ export default function Skills() {
               {/* End Tech Wrapper //>>  */}
             </motion.div>
           </SkillsParticles>
-        </motion.div>
-      ) : (
-        ""
-      )}
+        ) : (
+          ""
+        )}
+      </motion.div>
     </section>
   );
 }

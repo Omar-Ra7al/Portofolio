@@ -1,4 +1,7 @@
+// Css
 import "./DownloadCv.css";
+
+// React Icons
 import { FaCheckCircle } from "react-icons/fa";
 import { BsFillSendArrowDownFill } from "react-icons/bs";
 
