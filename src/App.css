@@ -10,3 +10,8 @@ a {
   text-decoration: none;
   color: var(--text-color);
 }
+.favicon {
+  width: 32px; /* Adjust the size */
+  height: 32px; /* Adjust the size */
+  border-radius: 50%;
+}
