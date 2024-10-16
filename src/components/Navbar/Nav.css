@@ -30,9 +30,9 @@ header .container {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  /* font-family: "Pacifico", cursive, sans-serif; */
-  /* font-weight: bold; */
-  /* font-display: swap; */
+  font-family: "Pacifico", cursive, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .toggle-nav {
   min-width: 100px;
