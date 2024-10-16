@@ -62,10 +62,13 @@
     /* transform: rotateX(-5deg) rotateY(-5deg); */
     img {
       position: absolute;
-      z-index: -1;
-      object-fit: cover;
+      left: 0;
+      top: 0;
       width: 100%;
+      object-fit: cover;
+      object-position: top;
       height: auto;
+      z-index: -1;
     }
   }
   .card:hover {

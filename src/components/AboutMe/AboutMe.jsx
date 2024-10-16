@@ -8,15 +8,10 @@ import { motion } from "framer-motion";
 import CardComponent from "../Card/Card";
 // import Education from "../../assets/imgs/Education.webp";
 // import Education from "../../assets/imgs/abstractEducation.avif";
-
+// import Education from "../../assets/imgs/book.png";
 // import Education from "../../assets/imgs/The-Biggest-Education-Trends-Of-The-Next-10-Years.webp";
-// import Education from "../../assets/imgs/opengraph.png";
-// import Education from "../../assets/imgs/1616685010519.png";
-// import Education from "../../assets/imgs/1616685010519 (1)_11zon (1).png";
-// import Education from "../../assets/imgs/abstract-graduation-cap-on-laptop-600nw-2292894983-transformed_11zon (1).webp";
-// import Education from "../../assets/imgs/2.webp";
+import Education from "../../assets/imgs/opengraph (2)_11zon.webp";
 
-import Education from "../../assets/imgs/1.webp";
 import TimeZone from "../../assets/imgs/TimeZone.webp";
 import Client from "../../assets/imgs/Client.webp";
 export default function AboutMe() {
