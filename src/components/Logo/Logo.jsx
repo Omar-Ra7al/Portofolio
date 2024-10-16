@@ -12,7 +12,7 @@ export default function Logo() {
     <div className="logo-container">
       <div className="profile-img">
         <img
-          loading="lazy"
+          // loading="lazy"
           className="svg"
           src={theme ? lightLogo : darkLogo}
           alt="logo"
