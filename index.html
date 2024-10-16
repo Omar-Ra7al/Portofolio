@@ -3,16 +3,21 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image" href="/Black-Gold-modified.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Google Fonts
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <!-- SEO optimizations -->
+  <meta name="description"
+    content="Explore Omar's front-end development portfolio. With expertise in HTML, CSS, JavaScript, React, and responsive web design, Omar creates dynamic, user-friendly websites that bring ideas to life." />
+  <meta name="keywords"
+    content="Omar, Front-End Developer, Portfolio, HTML, CSS, JavaScript, React, Web Design, Responsive Design, UI/UX" />
+  <!-- SEO optimizations -->
+
+  <!-- Google Fonts -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&family=SUSE:wght@100..800&display=swap"
     rel="stylesheet" /> -->
-  <!-- Google Fonts -->
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700;800&display=swap"
@@ -20,11 +25,20 @@
   <!-- Google Fonts -->
 
   <title>Omar Rahal</title>
+  <link rel="icon" type="image" href="/Black-Gold-modified.png" />
+
+  <!-- Preload CSS (optional) -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&family=SUSE:wght@100..800&display=swap"
+    as="style">
+
 </head>
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Defer the script to ensure HTML is loaded first -->
+  <script type="module" src="/src/main.jsx" defer></script>
 </body>
 
 </html>

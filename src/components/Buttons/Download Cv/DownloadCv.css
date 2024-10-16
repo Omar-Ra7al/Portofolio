@@ -11,7 +11,6 @@
   color: var(--dark-color);
   cursor: pointer;
   border-radius: var(--radius);
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   border: none;
   display: flex;
   align-items: center;
@@ -20,9 +19,12 @@
   transition: all 0.3s ease;
   min-width: 140px;
   padding: 12px 20px;
-  font-weight: bold;
-  font-family: "Galano Grotesque", Poppins, Montserrat, sans-serif;
+  /* font-weight: bold; */
+  /* font-family: "Galano Grotesque", Poppins, Montserrat, sans-serif; */
   font-size: 16px;
+  font-family: cursive;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  font-display: swap;
 }
 
 @media (max-width: 775px) {

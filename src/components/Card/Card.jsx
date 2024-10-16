@@ -70,19 +70,29 @@ export default function CardComponent() {
         </div>
         <div className="bottom">
           <div className="social-buttons-container">
-            <button className="social-button social-button1">
+            <button
+              className="social-button social-button1"
+              aria-label="Instagram">
               <FaInstagram className="icon" size={30} />
             </button>
-            <button className="social-button social-button2">
+            <button
+              className="social-button social-button2"
+              aria-label="Twitter">
               <FaTwitter className="icon" size={30} />
             </button>
-            <button className="social-button social-button3">
+            <button
+              className="social-button social-button3"
+              aria-label="GitHub">
               <FaGithub className="icon" size={30} />
             </button>
-            <button className="social-button social-button4">
+            <button
+              className="social-button social-button4"
+              aria-label="Facebook">
               <FaFacebook className="icon" size={30} />
             </button>
-            <button className="social-button social-button5">
+            <button
+              className="social-button social-button5"
+              aria-label="WhatsApp">
               <FaWhatsapp className="icon" size={30} />
             </button>
           </div>

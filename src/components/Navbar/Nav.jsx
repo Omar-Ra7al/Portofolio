@@ -43,32 +43,34 @@ export default function NavBar() {
             <div className="container">
               <ul>
                 <li>
-                  <Link to={"/#home"}>
+                  <Link to={"/#home"} aria-label="Go to Home">
                     <IoHomeOutline />
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/#about"}>
+                  <Link to={"/#about"} aria-label="Go to About Section">
                     <MdPerson />
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/#skills"}>
+                  <Link to={"/#skills"} aria-label="Go to Skills Section">
                     <GiNinjaHeroicStance />
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/#projects"}>
+                  <Link to={"/#projects"} aria-label="Go to Projects Section">
                     <FaCode />
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/#testimonials"}>
+                  <Link
+                    to={"/#testimonials"}
+                    aria-label="Go to Testimonials Section">
                     <FaUsers />
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/#contact"}>
+                  <Link to={"/#contact"} aria-label="Go to Contact Section">
                     <FaEnvelopeOpenText />
                   </Link>
                 </li>

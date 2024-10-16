@@ -3,13 +3,11 @@ import "./styles/Themes/Global.css";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Vendors
-import ScrollCounter from "./vendors/scroll/ScrollWidth";
-
 // React Hooks
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy } from "react";
 
-// Motion
+// Vendors
+const ScrollCounter = lazy(() => import("./vendors/scroll/ScrollWidth"));
 
 // Component
 import HomeJsx from "./components/Home/Home";

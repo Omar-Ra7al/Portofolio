@@ -15,13 +15,7 @@
   --box-border-top: 1px solid rgba(200, 200, 200, 0.4); /* Very subtle border */
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02); /* Extremely subtle shadow */
 }
-/* .light-theme {
-  --background-color-start: rgba(200, 200, 200, 0.3);
-  --background-color-end: rgba(240, 240, 240, 0.3);
-  --box-background: rgba(200, 200, 200, 0.25);
-  --box-border-top: 1px solid rgba(200, 200, 200, 0.8);
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); 
-} */
+
 .light-theme {
   --background-color-start: rgba(75, 75, 75, 0.15); /* Softer, lighter gray */
   --background-color-end: rgba(
@@ -33,24 +27,6 @@
   --box-background: rgba(125, 125, 125, 0.1); /* Lighter box background */
   --box-border-top: 1px solid rgba(125, 125, 125, 0.6); /* Softer border */
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Lightened box-shadow for a subtle effect */
-}
-
-.light-theme {
-  --background-color-start: rgba(
-    150,
-    150,
-    150,
-    0.2
-  ); /* Darker gray for a more substantial background */
-  --background-color-end: rgba(160, 160, 160, 0.2); /* Slightly lighter gray */
-  --box-background: rgba(
-    170,
-    170,
-    170,
-    0.15
-  ); /* More defined background for boxes */
-  --box-border-top: 1px solid rgba(150, 150, 150, 0.7); /* Stronger border for more contrast */
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Noticeable but subtle shadow */
 }
 
 .light-theme {

@@ -249,7 +249,7 @@ const projectsData = [
   //   languages: ["HTML", "CSS", "JavaScript", "React"],
   //   frameWorks: "React",
   //   category: "React",
-  //   homeImageUrl: WeatherAppReact,
+    // homeImageUrl: WeatherAppReact,
   //   imgs: [WeatherAppReact1],
   //   links: {
   //     demo: "https://react-wheater-app.netlify.app/",
@@ -273,7 +273,7 @@ const projectsData = [
   //   languages: ["HTML", "CSS", "JavaScript"],
   //   frameWorks: "none",
   //   category: "JavaScript",
-  //   homeImageUrl: QrScannerJs,
+    // homeImageUrl: QrScannerJs,
   //   imgs: [QrScannerJs],
   //   links: {
   //     demo: "https://omar-ra7al.github.io/QR-Scanner/",

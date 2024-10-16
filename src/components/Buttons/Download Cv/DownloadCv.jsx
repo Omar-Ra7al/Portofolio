@@ -10,7 +10,7 @@ export default function CvBtn() {
     <a
       href="https://drive.google.com/uc?export=download&id=1A3wBuMhc49lWoYsdoKaTRqIALaHYMLY9"
       download>
-      <button className="send-button">
+      <button className="send-button" aria-label="Download Cv">
         <div className="outline"></div>
         <div className="state state--default">
           <div className="icon">

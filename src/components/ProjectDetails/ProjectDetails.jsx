@@ -118,13 +118,21 @@ export default function PojectDetails() {
               </div>
               <div className="project-actions">
                 <button>
-                  <a href={project.links.demo} target="blank">
+                  <a
+                    href={project.links.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View live demo of the project">
                     Live
                     <FiEye />
                   </a>
                 </button>
                 <button>
-                  <a href={project.links.repo} target="blank">
+                  <a
+                    href={project.links.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View project repository on GitHub">
                     Repo
                     <FaGithub />
                   </a>
