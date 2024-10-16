@@ -32,6 +32,7 @@ header .container {
   color: transparent;
   font-family: "Pacifico", cursive, sans-serif;
   font-weight: bold;
+  font-display: swap;
   letter-spacing: 1px;
 }
 .toggle-nav {

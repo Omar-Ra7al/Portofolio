@@ -95,6 +95,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-display: swap;
+  span {
+    font-display: swap;
+  }
 }
 .state .icon {
   position: absolute;
