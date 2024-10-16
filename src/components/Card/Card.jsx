@@ -62,7 +62,7 @@ export default function CardComponent() {
         </div>
         <div className="glass"></div>
         <div className="descripe-content">
-          <img loading="lazy" src={logo} alt="" />
+          <img loading="lazy" src={logo} alt="gold img" />
           <span className="descripe-title">Omar Rahal</span>
           <span className="text">
             Frontend Devolper <FaLaptopCode />

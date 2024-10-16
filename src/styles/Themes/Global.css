@@ -24,7 +24,10 @@ body::-webkit-scrollbar-thumb {
     color-stop(0.86, rgb(28, 58, 148))
   );
 }
-
+html {
+  -webkit-font-smoothing: antialiased; /* Improves rendering on iPhones */
+  -moz-osx-font-smoothing: grayscale;
+}
 #root {
   overflow: hidden;
 }

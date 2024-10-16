@@ -33,7 +33,7 @@ header .container {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  font-family: "Pacifico", cursive, sans-serif;
+  font-family: cursive;
   font-weight: bold;
 }
 .toggle-nav {
