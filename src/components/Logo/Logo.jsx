@@ -11,7 +11,12 @@ export default function Logo() {
   return (
     <div className="logo-container">
       <div className="profile-img">
-        <img className="svg" src={theme ? lightLogo : darkLogo} alt="logo" />
+        <img
+          loading="lazy"
+          className="svg"
+          src={theme ? lightLogo : darkLogo}
+          alt="logo"
+        />
       </div>
       <div className="ripple-container">
         <div className="box"></div>
