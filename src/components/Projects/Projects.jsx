@@ -23,7 +23,7 @@ import GitHub from "../../assets/imgs/GitHub.jpeg";
 
 // Projects Data >>>>
 export default function Projects() {
-  const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("Css");
   const [loader, setLoader] = useState(false);
 
   const projectsData = useProjectsData();

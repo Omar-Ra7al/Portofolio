@@ -4,7 +4,6 @@
   width: 290px;
   height: 300px;
   perspective: 1000px;
-}
 
 .card-descripe {
   height: 100%;
@@ -222,6 +221,7 @@
   width: 20px;
   height: 20px;
   color: white;
+}
 }
 
 .parent:hover .card-descripe {
