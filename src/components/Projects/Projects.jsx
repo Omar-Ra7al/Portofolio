@@ -164,7 +164,7 @@ export default function Projects() {
                 </div>
                 <div className="project-card">
                   <div className="img-wrapper">
-                    <img src={GitHub} alt="" />
+                    <img loading="lazy" src={GitHub} alt="github" />
                   </div>
                   <div className="project-content">
                     <div
