@@ -52,7 +52,7 @@ export default function Projects() {
             </div>
             <div className="project-card">
               <div className="img-wrapper">
-                <img src={project.homeImageUrl} alt={project.title} />
+                <img loading="lazy" src={project.homeImageUrl} alt={project.title} />
               </div>
 
               <div className="project-content">
