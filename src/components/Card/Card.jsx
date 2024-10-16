@@ -57,8 +57,7 @@ export default function CardComponent() {
           <span className="circle circle3"></span>
           <span className="circle circle4"></span>
           <span className="circle circle5">
-            {/* <FiCamera className="icon" size={30} />  */}
-            <p style={{ color: "white", fontFamily: "cursive" }}>R.Dev</p>
+            <p>R.Dev</p>
           </span>
         </div>
         <div className="glass"></div>

@@ -46,7 +46,12 @@
   padding: 40px 60px 0px 30px;
   transform: translate3d(0, 0, 26px);
 }
-
+.descripe-logo {
+  p {
+    font-family: "Pacifico", cursive, sans-serif;
+    color: var(--secondary-text);
+  }
+}
 .descripe-content .descripe-title {
   display: block;
   color: var(--text-color);
@@ -87,16 +92,6 @@
 
 .bottom .view-more:hover {
   transform: translate3d(0, 0, 10px);
-}
-
-.bottom .view-more .view-more-button {
-  background: none;
-  border: none;
-  color: #00c37b;
-  color: var(--text-color);
-  font-weight: bolder;
-  font-size: 12px;
-  cursor: pointer;
 }
 
 .bottom .social-buttons-container {
