@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 // Components
 import CardComponent from "../Card/Card";
 
+import Education from "../../assets/imgs/Education.jpeg";
+import TimeZone from "../../assets/imgs/TimeZone.jpg";
+import Client from "../../assets/imgs/Client.jpg";
 export default function AboutMe() {
   return (
     <section id="about" className="aboutMe-content">
@@ -67,6 +70,7 @@ export default function AboutMe() {
               initial={{ marginLeft: -10, opacity: 0 }}
               whileInView={{ marginLeft: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}>
+              <img loading="lazy" src={Education} alt="education" />
               <div className="card-content">
                 <p>
                   Graduated in 2023 with a Bachelor`s in Management Information
@@ -80,6 +84,8 @@ export default function AboutMe() {
               initial={{ marginLeft: 20, opacity: 0 }}
               whileInView={{ marginLeft: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}>
+              <img loading="lazy" src={TimeZone} alt="time zone" />
+
               <div className="card-content">
                 <p>
                   Flexible and adaptable to different time zones for seamless
@@ -93,6 +99,8 @@ export default function AboutMe() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 1, ease: "easeInOut" }}>
+              <img loading="lazy" src={Client} alt="client" />
+
               <div className="card-content">
                 <p>
                   Dedicated to fostering trust and open communication with

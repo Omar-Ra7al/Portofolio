@@ -60,6 +60,13 @@
     transition: 0.3s;
     transform-style: preserve-3d;
     /* transform: rotateX(-5deg) rotateY(-5deg); */
+    img {
+      position: absolute;
+      z-index: -1;
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
   }
   .card:hover {
     /* Todo in projects */
@@ -68,13 +75,13 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   }
   .card.education {
-    background-image: url("../../assets/imgs/Education.jpeg");
+    /* background-image: url("../../assets/imgs/Education.jpeg"); */
   }
   .card.time-zone {
-    background-image: url("../../assets/imgs/TimeZone.jpg");
+    /* background-image: url("../../assets/imgs/TimeZone.jpg"); */
   }
   .card.client {
-    background-image: url("../../assets/imgs/Client.jpg");
+    /* background-image: url("../../assets/imgs/Client.jpg"); */
   }
   .card-container .card-content {
     width: 100%;
