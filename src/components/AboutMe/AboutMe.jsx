@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 // Components
 import CardComponent from "../Card/Card";
 
-import Education from "../../assets/imgs/Education.webp";
+// import Education from "../../assets/imgs/Education.webp";
+import Education from "../../assets/imgs/Education_11zon.webp";
 import TimeZone from "../../assets/imgs/TimeZone.webp";
 import Client from "../../assets/imgs/Client.webp";
 export default function AboutMe() {
