@@ -1,8 +1,8 @@
 import "./Logo.css";
 
 // Logo Img
-import lightLogo from "../../assets/logo/White-Gold.png";
-import darkLogo from "../../assets/logo/Black-Gold.png";
+import lightLogo from "../../assets/logo/White-Gold.webp";
+import darkLogo from "../../assets/logo/Black-Gold.webp";
 import { useTheme } from "../ThemeContext/ThemeContext";
 
 export default function Logo() {
