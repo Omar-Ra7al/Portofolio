@@ -75,7 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-left: -10px;
   transform: rotateX(1deg);
   transform-style: preserve-3d;
