@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 // Components
 import CardComponent from "../Card/Card";
 
-import Education from "../../assets/imgs/Education.jpeg";
-import TimeZone from "../../assets/imgs/TimeZone.jpg";
-import Client from "../../assets/imgs/Client.jpg";
+import Education from "../../assets/imgs/Education.webp";
+import TimeZone from "../../assets/imgs/TimeZone.webp";
+import Client from "../../assets/imgs/Client.webp";
 export default function AboutMe() {
   return (
     <section id="about" className="aboutMe-content">
