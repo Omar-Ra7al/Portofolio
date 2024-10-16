@@ -55,7 +55,7 @@ const Footer = () => {
             duration: 0.3,
           }}>
           <div className="img-wrapper">
-            <img src={logo} alt="" />
+            <img loading="lazy" src={logo} alt="footer logo" />
           </div>
           <p>R.Dev</p>
         </motion.div>

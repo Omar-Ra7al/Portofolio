@@ -35,7 +35,12 @@ export default function Testimonials() {
           <div className="container">
             <div className="testimonials-card">
               <div className="person-profile">
-                <img className="testimonials-logo" src={logo} alt="" />
+                <img
+                  loading="lazy"
+                  className="testimonials-logo"
+                  src={logo}
+                  alt=""
+                />
                 <div className="person-data">
                   <p>Omar Rahal</p>
                   <span>Ceo</span>
