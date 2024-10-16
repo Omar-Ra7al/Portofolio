@@ -2,7 +2,7 @@
 import "./Footer.css";
 
 // Assets
-import logo from "../../assets/logo/White-Gold.png";
+import logo from "../../assets/logo/White-Gold.webp";
 
 // React Icons
 import {
