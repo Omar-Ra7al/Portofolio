@@ -21,7 +21,7 @@
     margin-bottom: 20px;
     p {
       font-size: 22px;
-      font-family: cursive;
+      font-family: cursive, Poppins, sans-serif;
       color: var(--main-color);
     }
   }
