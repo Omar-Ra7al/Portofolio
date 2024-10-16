@@ -8,8 +8,8 @@ import { BsFillSendArrowDownFill } from "react-icons/bs";
 export default function CvBtn() {
   return (
     <a
-      href="https://drive.google.com/uc?export=download&id=1A3wBuMhc49lWoYsdoKaTRqIALaHYMLY9"
-      download>
+      href="https://drive.google.com/file/d/1sb71uwA547k3_eni_wLS3LB8y2KEdwBh/view?usp=drive_link"
+      target="blank">
       <button className="send-button" aria-label="Download Cv">
         <div className="outline"></div>
         <div className="state state--default">
