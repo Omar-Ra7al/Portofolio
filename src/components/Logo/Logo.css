@@ -52,7 +52,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: var(--box-shadow); /* Non-animated shadow */
-  will-change: transform; /* Limited to transform */
+  will-change: transform;
   backdrop-filter: blur(10px);
   z-index: 100;
 }
