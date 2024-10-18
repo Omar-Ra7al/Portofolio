@@ -34,11 +34,26 @@ import TodoListReact3 from "../../assets/imgs/projects/Home/React/Todos/TodoReac
 import TodoListReact4 from "../../assets/imgs/projects/Home/React/Todos/TodoReact4.png";
 import TodoListReact5 from "../../assets/imgs/projects/Home/React/Todos/TodoReact5.png";
 import TodoMuiReact from "../../assets/imgs/projects/Home/React/Todos/TodoMui.png";
-// Ecommerce
+// Weather >>
+import WeatherApp from "../../assets/imgs/projects/Home/React/Weather/WeatherAppReact0.png";
+import WeatherApp1 from "../../assets/imgs/projects/Home/React/Weather/WeatherAppReact1.png";
+import WeatherApp2 from "../../assets/imgs/projects/Home/React/Weather/WeatherAppReact2.png";
+import WeatherApp3 from "../../assets/imgs/projects/Home/React/Weather/WeatherAppReact3.png";
+// Ecommerce >>
 import ECommerceReact from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact.png";
 import ECommerceReact2 from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact2.png";
 import ECommerceReact3 from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact3.png";
 import ECommerceReact4 from "../../assets/imgs/projects/Home/React/Ecommerce/E-CommerceReact4.png";
+// Ecommerce
+import ECommerce1 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere1.png";
+import ECommerce2 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere2.png";
+import ECommerce3 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere3.png";
+import ECommerce4 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere4.png";
+import ECommerce5 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere5.png";
+import ECommerce6 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere6.png";
+import ECommerce7 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere7.png";
+import ECommerce8 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere8.png";
+
 // import WeatherAppReact from "../../assets/imgs/projects/Home/React/WeatherAppReact.png";
 // import WeatherAppReact1 from "../../assets/imgs/projects/Home/React/WeatherAppReact1.png";
 import Slider from "../../assets/imgs/projects/Home/React/Slider.png";
@@ -113,42 +128,43 @@ const projectsData = [
     features: ["Task Management", "State Management"],
   },
 
-  // Top Project 3: E-Commerce (React)
   {
-    id: 3,
-    title: "React E-Commerce",
+    id: 115,
+    title: "E-Commerce Web Application React",
     description:
-      "E-commerce web app built with React.js, Redux Toolkit for state management, The app allows users to add and remove products from the cart, displays pop-up notifications for actions like adding products, and prevents multiple additions of the same product.",
+      "A fully responsive e-commerce web application built with React, Material-UI (MUI), and Redux for state management.",
     descriptionLong:
-      "This e-commerce web application is developed using React.js and Redux Toolkit to manage state effectively. It simulates API interactions by fetching product data from a JSON file, providing a seamless user experience. The application is fully responsive across all devices and includes features like pop-up notifications to inform users about the status of their actions, such as adding products to the cart or restrictions on adding the same product multiple times. Users can view the total number of products in the cart, enhancing the shopping experience. The app is styled with Material-UI, ensuring a modern and attractive interface, while React Router facilitates smooth navigation between product details and other sections of the app.",
-    date: "9/9/2024",
+      "This is a React-based E-Commerce Web Application that allows users to browse and purchase products online. Built using React, Material-UI (MUI), and Redux for state management, the app features responsive design ensuring a seamless experience across mobile, tablet, and desktop devices. Users can browse products, add them to the cart, search/filter products, and manage user accounts. The project also supports product listing, authentication, and shopping cart functionality.",
+    date: "10/18/2024",
     rate: 5,
-    languages: ["HTML", "CSS", "JavaScript", "React"],
-    frameworks: "React",
+    languages: ["HTML", "CSS", "JavaScript", "React.js", "Redux"],
+    frameWorks: "Material-UI (MUI)",
     category: "React",
-    homeImageUrl: ECommerceReact,
-    imgs: [ECommerceReact2, ECommerceReact3, ECommerceReact4],
+    homeImageUrl: ECommerce1,
+    imgs: [
+      ECommerce2,
+      ECommerce3,
+      ECommerce4,
+      ECommerce5,
+      ECommerce6,
+      ECommerce7,
+      ECommerce8,
+    ],
     links: {
-      demo: "https://react-ecommerce-mqyfdahfn-omar-rahals-projects.vercel.app/",
-      repo: "https://github.com/Omar-Ra7al/React-Ecommerce-App.git",
+      demo: "https://react-ecommerce10.vercel.app/",
+      repo: "https://github.com/your-username/react-ecommerce", // Replace with your GitHub repo link
       details: "",
     },
-    tools: [
-      "Git",
-      "npm",
-      "Redux Toolkit",
-      "Material-UI",
-      "React Router",
-      "React Icons",
-    ],
+    tools: ["React.js", "Redux", "Material-UI (MUI)", "React Router"],
     features: [
       "Responsive Design",
-      "Admin Dashboard",
-      "Add/Remove Products from Cart",
-      "Popup Notifications for Cart Actions",
-      "Simulated API with JSON File",
-      "Smooth Navigation with React Router",
-      "Icons for Improved UI with React Icons",
+      "Product Listing",
+      "Search & Filter Functionality",
+      "User Authentication",
+      "Add to Cart",
+      "Redux for State Management",
+      "Product Details",
+      "Mobile-Friendly",
     ],
   },
   //   // Project 4: Search Engine (Vanilla JS)
@@ -176,6 +192,34 @@ const projectsData = [
       "Search Functionality",
       "Responsive Design",
       "Real-Time Results",
+    ],
+  },
+
+  // Weather App React js >>
+  {
+    id: 109,
+    title: "Weather App",
+    description:
+      "A responsive Weather app built with React, offering real-time weather updates and dynamic background changes based on weather conditions.",
+    descriptionLong:
+      "This Weather application is built with React, providing users with real-time weather information. The app dynamically changes the background depending on the current weather condition, enhancing the user experience. It is fully responsive and easy to use across devices.",
+    date: "18/10/2024",
+    rate: 4.7,
+    languages: ["HTML", "CSS", "JavaScript", "React"],
+    frameWorks: "React",
+    category: "React",
+    homeImageUrl: WeatherApp,
+    imgs: [WeatherApp1, WeatherApp2, WeatherApp3],
+    links: {
+      demo: "https://weather1-app1.vercel.app/",
+      repo: "https://github.com/Omar-Ra7al/weather-app.git",
+      details: "",
+    },
+    tools: ["React", "Git"],
+    features: [
+      "Real-time Weather Updates",
+      "Dynamic Background Changes",
+      "Responsive Design",
     ],
   },
 
@@ -236,53 +280,6 @@ const projectsData = [
     features: ["CRUD Functionality", "Light & Night Mode", "Responsive Design"],
   },
 
-  // Project 7: Weather App (React)
-  // {
-  //   id: 7,
-  //   title: "Weather App",
-  //   description:
-  //     "A weather app built with React that supports language switching between Arabic and English, with automatic direction adjustment.",
-  //   descriptionLong:
-  //     "This React-based weather application provides real-time weather data by fetching information from an external API. It supports language switching between Arabic and English, dynamically adjusting the layout direction (LTR/RTL) based on the selected language. The app is fully responsive and optimized for different screen sizes.",
-  //   date: "22/7/2024",
-  //   rate: 4.5,
-  //   languages: ["HTML", "CSS", "JavaScript", "React"],
-  //   frameWorks: "React",
-  //   category: "React",
-    // homeImageUrl: WeatherAppReact,
-  //   imgs: [WeatherAppReact1],
-  //   links: {
-  //     demo: "https://react-wheater-app.netlify.app/",
-  //     repo: "https://github.com/Omar-Ra7al/React-Weather-App-",
-  //     details: "",
-  //   },
-  //   tools: ["React", "API", "Git"],
-  //   features: ["Real-Time Weather", "Language Switcher", "Responsive Design"],
-  // },
-
-  // // Project 8: QR Code Scanner (Vanilla JS)
-  // {
-  //   id: 8,
-  //   title: "QR Code Scanner",
-  //   description:
-  //     "A QR code scanner application built using Vanilla JavaScript, allowing users to scan and decode QR codes.",
-  //   descriptionLong:
-  //     "This QR code scanner is built with Vanilla JavaScript, enabling users to scan QR codes using their device's camera. The app decodes the QR code and displays the information in real-time. It is lightweight and works across various devices, providing a fast and efficient way to scan QR codes.",
-  //   date: "10/6/2023",
-  //   rate: 4,
-  //   languages: ["HTML", "CSS", "JavaScript"],
-  //   frameWorks: "none",
-  //   category: "JavaScript",
-    // homeImageUrl: QrScannerJs,
-  //   imgs: [QrScannerJs],
-  //   links: {
-  //     demo: "https://omar-ra7al.github.io/QR-Scanner/",
-  //     repo: "https://github.com/Omar-Ra7al/QR-Scanner",
-  //     details: "",
-  //   },
-  //   tools: ["JavaScript", "QR API"],
-  //   features: ["QR Code Scanning", "Responsive Design", "Real-Time Decoding"],
-  // },
   // Project 88: Shopping Cart (Vanilla JS)
   {
     id: 88,
@@ -326,7 +323,44 @@ const projectsData = [
     tools: ["Bootstrap", "Git"],
     features: ["Modern Layout", "Responsive Design"],
   },
-
+  // Top Project 3: E-Commerce (React)
+  {
+    id: 3,
+    title: "React E-Commerce",
+    description:
+      "E-commerce web app built with React.js, Redux Toolkit for state management, The app allows users to add and remove products from the cart, displays pop-up notifications for actions like adding products, and prevents multiple additions of the same product.",
+    descriptionLong:
+      "This e-commerce web application is developed using React.js and Redux Toolkit to manage state effectively. It simulates API interactions by fetching product data from a JSON file, providing a seamless user experience. The application is fully responsive across all devices and includes features like pop-up notifications to inform users about the status of their actions, such as adding products to the cart or restrictions on adding the same product multiple times. Users can view the total number of products in the cart, enhancing the shopping experience. The app is styled with Material-UI, ensuring a modern and attractive interface, while React Router facilitates smooth navigation between product details and other sections of the app.",
+    date: "9/9/2024",
+    rate: 5,
+    languages: ["HTML", "CSS", "JavaScript", "React"],
+    frameworks: "React",
+    category: "React",
+    homeImageUrl: ECommerceReact,
+    imgs: [ECommerceReact2, ECommerceReact3, ECommerceReact4],
+    links: {
+      demo: "https://react-ecommerce-mqyfdahfn-omar-rahals-projects.vercel.app/",
+      repo: "https://github.com/Omar-Ra7al/React-Ecommerce-App.git",
+      details: "",
+    },
+    tools: [
+      "Git",
+      "npm",
+      "Redux Toolkit",
+      "Material-UI",
+      "React Router",
+      "React Icons",
+    ],
+    features: [
+      "Responsive Design",
+      "Admin Dashboard",
+      "Add/Remove Products from Cart",
+      "Popup Notifications for Cart Actions",
+      "Simulated API with JSON File",
+      "Smooth Navigation with React Router",
+      "Icons for Improved UI with React Icons",
+    ],
+  },
   // Project 10: To-Do List (Material-UI & React)
   {
     id: 10,

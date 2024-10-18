@@ -1,5 +1,4 @@
 body {
-  font-family: Poppins;
   width: 100%;
   background: var(--background-color);
   overflow-x: hidden;
@@ -30,6 +29,7 @@ html {
 }
 #root {
   overflow: hidden;
+  font-family: Poppins;
 }
 * {
   box-sizing: border-box;

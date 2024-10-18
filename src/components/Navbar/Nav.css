@@ -33,7 +33,7 @@ header .container {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  font-family: cursive;
+  font-family: "Pacifico", cursive, sans-serif;
   font-weight: bold;
 }
 .toggle-nav {
@@ -108,6 +108,7 @@ nav ul li a {
   font-size: 18px;
   color: #fff;
 }
+
 .toggle-nav.close {
   span.remove {
     display: none;
