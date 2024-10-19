@@ -13,8 +13,8 @@
     transition: all 0.5s ease-in-out;
 
     transform-style: preserve-3d;
-    box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px,
-      rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 40px 50px 25px -40px,
+      rgba(100, 100, 111, 0.2) 0px 25px 25px -5px;
     position: relative;
     transform: translateY(-10deg);
   }
@@ -39,6 +39,7 @@
   .card-descripe img {
     border-radius: 50%;
     width: 60px;
+    height: auto;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.605);
   }
   .descripe-content {
@@ -49,6 +50,7 @@
     p {
       font-family: "Pacifico", cursive, sans-serif;
       color: var(--secondary-text);
+      color: var(--light-color);
     }
   }
   .descripe-content .descripe-title {
@@ -81,18 +83,6 @@
     transform: translate3d(0, 0, 26px);
   }
 
-  .bottom .view-more {
-    display: flex;
-    align-items: center;
-    width: 40%;
-    justify-content: flex-end;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .bottom .view-more:hover {
-    transform: translate3d(0, 0, 10px);
-  }
-
   .bottom .social-buttons-container {
     display: flex;
     gap: 10px;
@@ -106,8 +96,9 @@
     background: rgb(255, 255, 255);
     border-radius: 50%;
     border: none;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: rgba(255, 255, 255, 0.5) 0px 7px 5px -5px;
     cursor: pointer;
   }
