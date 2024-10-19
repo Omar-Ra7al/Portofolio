@@ -6,11 +6,11 @@ import { FcAbout } from "react-icons/fc";
 import { motion } from "framer-motion";
 // Components
 import CardComponent from "../Card/Card";
-// import Education from "../../assets/imgs/Education.webp";
+import Education from "../../assets/imgs/Education.webp";
 // import Education from "../../assets/imgs/abstractEducation.avif";
 // import Education from "../../assets/imgs/book.png";
 // import Education from "../../assets/imgs/The-Biggest-Education-Trends-Of-The-Next-10-Years.webp";
-import Education from "../../assets/imgs/opengraph (2)_11zon.webp";
+// import Education from "../../assets/imgs/opengraph (2)_11zon.webp";
 
 import TimeZone from "../../assets/imgs/TimeZone.webp";
 import Client from "../../assets/imgs/Client.webp";
