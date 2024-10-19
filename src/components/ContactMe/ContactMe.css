@@ -27,10 +27,11 @@
   padding: 30px;
   border-radius: 15px;
   transition: 0.3s;
-  height: 400px;
+  min-height: 400px;
   box-shadow: -10px 10px 10px var(--dark-color);
   transform: rotateY(25deg) rotateX(5deg) translateZ(-30px);
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .social {
   transform: rotateY(-25deg) rotateX(5deg) translateZ(-30px);
