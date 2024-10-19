@@ -28,6 +28,7 @@ html {
   overflow-x: hidden;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  /* font-family: cursive; */
 }
 
 /* Global >> */
@@ -46,6 +47,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 .container {
