@@ -21,7 +21,8 @@
     margin-bottom: 20px;
     p {
       font-size: 22px;
-      font-family: cursive, Poppins, sans-serif;
+      font-weight: bold;
+      font-family: "Pacifico", cursive; /* Use Pacifico for headers */
       color: var(--main-color);
     }
   }
