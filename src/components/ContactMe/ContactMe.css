@@ -104,6 +104,12 @@
   border: 2px solid var(--light-color);
   transform-style: preserve-3d;
 }
+@media (max-width: 591px) {
+  .social-btn {
+    padding: 5px 10px;
+    width: 46%;
+  }
+}
 
 .social-btn a {
   color: var(--text-color);
