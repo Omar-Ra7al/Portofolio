@@ -145,7 +145,7 @@
 }
 @media (max-width: 591px) {
   .project-card .img-wrapper {
-    max-height: 200px;
+    max-height: 180px;
   }
   .card-wrapper {
     height: 350px;
