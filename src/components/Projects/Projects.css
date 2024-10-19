@@ -214,10 +214,9 @@
   }
 }
 @media (max-width: 591px) {
-  .img-wrapper::before,
   .img-wrapper::after {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
   .card-wrapper:hover .indecator {
     height: 35%;
