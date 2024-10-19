@@ -108,10 +108,10 @@
   }
 }
 .project-card .img-wrapper img {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 
 /* Active Effect */
@@ -139,8 +139,8 @@
   outline: 5px solid var(--nav-bg-color);
 }
 .img-wrapper::after {
-  width: 95px;
-  height: 95px;
+  width: 90px;
+  height: 90px;
   box-shadow: inset 0 0 10px var(--light-color), 0 0 10px var(--main-color);
 }
 
