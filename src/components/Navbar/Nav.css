@@ -132,6 +132,9 @@ nav ul li a {
   }
   nav .container {
     padding: 40px 20px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    overflow: visible;
   }
   nav:hover {
     height: 330px;
