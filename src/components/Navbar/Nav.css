@@ -81,8 +81,6 @@ nav {
   border-bottom-left-radius: 50px;
   transition: 0.5s ease, opacity 0.5s ease;
   z-index: 10000;
-  backdrop-filter: var(--bg-blur);
-  -webkit-backdrop-filter: var(--bg-blur);
 }
 nav .container {
   box-shadow: inset 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -130,6 +128,7 @@ nav ul li a {
 
   nav {
     height: 300px;
+    max-height: 330px;
   }
   nav .container {
     padding: 40px 20px;
