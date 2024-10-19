@@ -147,6 +147,9 @@
   .project-card .img-wrapper {
     max-height: 200px;
   }
+  .card-wrapper {
+    height: 350px;
+  }
 }
 .project-card .img-wrapper img {
   width: 100%;
