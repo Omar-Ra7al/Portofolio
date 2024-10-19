@@ -91,7 +91,6 @@
   z-index: -1;
   transition: opacity 0.3s, height 0.5s ease;
   transition-delay: 0.3s;
-  /* width: 0; */
 }
 .card-wrapper:hover .indecator {
   z-index: 1;
