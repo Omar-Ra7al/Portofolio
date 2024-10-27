@@ -9,7 +9,9 @@ export default function CvBtn() {
   return (
     <a
       href="https://drive.google.com/file/d/1kLoRfOBYpr8Os0GLZJBXlbIW72uE9vxq/view?usp=sharing"
-      target="blank">
+      target="blank"
+    // download
+    >
       <button className="send-button" aria-label="Download Cv">
         <div className="outline"></div>
         <div className="state state--default">
