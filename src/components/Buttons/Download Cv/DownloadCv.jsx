@@ -8,7 +8,7 @@ import { BsFillSendArrowDownFill } from "react-icons/bs";
 export default function CvBtn() {
   return (
     <a
-      href="https://drive.google.com/file/d/1lK_5cV0LGV_GBlqqAWbMThZyvN5xpaeF/view?usp=sharing"
+      href="https://drive.google.com/file/d/1cULXz7x-L1DihIj8lUlFO1WgxIFYQs2m/view?usp=sharing"
       target="blank">
       <button className="send-button" aria-label="Download Cv">
         <div className="outline"></div>
