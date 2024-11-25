@@ -65,17 +65,23 @@
       left: 0;
       top: 0;
       width: 100%;
-      object-fit: cover;
-      object-position: top;
       height: auto;
+      max-height: 100%;
+      object-position: top;
+      object-fit: cover;
       z-index: -1;
     }
+    border-bottom: 2px solid var(--dark-color);
   }
   .card:hover {
     /* Todo in projects */
     /* transform: perspective(1200px) rotateX(10deg) translateZ(-30px);  */
     transform: rotateX(10deg) rotateY(10deg);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+    img {
+      border-bottom: 2px solid var(--dark-color);
+    }
   }
   .card.education {
     /* background-image: url("../../assets/imgs/Education.jpeg"); */
