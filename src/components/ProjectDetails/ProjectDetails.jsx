@@ -2,7 +2,7 @@
 import "./ProjectDetails.css";
 
 // Component >>
-import { useProjectsData } from "../ProjectsContext/ProjectsProvide";
+import { allProjectsData } from "../ProjectsContext/ProjectsProvide";
 import Swiper from "../../vendors/Swiper/Swiper";
 
 // React >>
@@ -26,7 +26,7 @@ export default function PojectDetails() {
   }, [pathname]);
 
   const { projectId } = useParams();
-  const projectsData = useProjectsData();
+  const projectsData = allProjectsData;
   const projectDetails = projectsData.filter((project) => {
     return project.id == projectId;
   });

@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+// import { createContext, useContext } from "react";
 
 // import TodoListJs from "../../assets/imgs/projects/Home/Js/Todo-jS.png";
 import ShoppingCartJs from "../../assets/imgs/projects/Home/Js/ShopingCart-Js.png";
@@ -15,7 +15,6 @@ import CrudsNightMode2 from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNight
 import CrudsNightMode3 from "../../assets/imgs/projects/Home/Js/Cruds/CrudsNightMode3.png";
 import CrudsLightMode from "../../assets/imgs/projects/Home/Js/Cruds/CrudsLIghtMode.png";
 
-//
 // import QrScannerJs from "../../assets/imgs/projects/Home/Js/QrScannerjs.png";
 import SearchEniginJs from "../../assets/imgs/projects/Home/Js/SerchEngine/SearchEniginjs.png";
 import SearchEniginJs1 from "../../assets/imgs/projects/Home/Js/SerchEngine/SearchEniginjs1.png";
@@ -54,9 +53,14 @@ import ECommerce6 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommer
 import ECommerce7 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere7.png";
 import ECommerce8 from "../../assets/imgs/projects/Home/React/Ecommerce2/Ecommere8.png";
 
-// import WeatherAppReact from "../../assets/imgs/projects/Home/React/WeatherAppReact.png";
-// import WeatherAppReact1 from "../../assets/imgs/projects/Home/React/WeatherAppReact1.png";
 import Slider from "../../assets/imgs/projects/Home/React/Slider.png";
+
+// Next js >>
+import ocean1 from "../../assets/imgs/projects/Home/Next/Ocean/ocean1.png";
+import ocean3 from "../../assets/imgs/projects/Home/Next/Ocean/ocean2.png";
+import ocean4 from "../../assets/imgs/projects/Home/Next/Ocean/ocean3.png";
+import ocean5 from "../../assets/imgs/projects/Home/Next/Ocean/ocean4.png";
+import ocean6 from "../../assets/imgs/projects/Home/Next/Ocean/ocean5.png";
 // BootStrap >>
 import DecoreBootStrap from "../../assets/imgs/projects/Home/BootStrap/Decore-Bootstrap.png";
 import DecoreBootStrap1 from "../../assets/imgs/projects/Home/BootStrap/Decore-Bootstrap1.png";
@@ -67,7 +71,7 @@ import MovieClubBootStrap from "../../assets/imgs/projects/Home/BootStrap/MovieC
 import MovieClubBootStrap1 from "../../assets/imgs/projects/Home/BootStrap/MovieClub1.png";
 import MovieClubBootStrap2 from "../../assets/imgs/projects/Home/BootStrap/MovieClub2.png";
 //
-const projectsData = [
+export const allProjectsData = [
   // Top Project 1: E-Commerce (Vanilla JS)
   {
     id: 1,
@@ -98,36 +102,7 @@ const projectsData = [
     tools: ["Git", "npm"],
     features: ["Responsive Design", "Admin Dashboard", "User Authentication"],
   },
-  // Project 2: To-Do List App (React)
-  {
-    id: 2,
-    title: "To-Do List React",
-    description:
-      "A responsive To-Do List app built with React, allowing users to manage tasks with ease with light and dark Mode.",
-    descriptionLong:
-      "This To-Do List application is built with React, providing users with a simple, intuitive interface for managing tasks. Users can add, edit, and delete tasks, with the app maintaining state and rendering changes instantly using React's state management hooks.",
-    date: "25/8/2024",
-    rate: 4.5,
-    languages: ["HTML", "CSS", "JavaScript", "React"],
-    frameWorks: "React",
-    category: "React",
-    homeImageUrl: TodoListReact,
-    imgs: [
-      TodoListReact1,
-      TodoListReact2,
-      TodoListReact3,
-      TodoListReact4,
-      TodoListReact5,
-    ],
-    links: {
-      demo: "https://react-interactive-todo.vercel.app/",
-      repo: "https://github.com/Omar-Ra7al/React-interactive-Todo.git",
-      details: "",
-    },
-    tools: ["React", "Git"],
-    features: ["Task Management", "State Management"],
-  },
-
+  // React Ecommerce App >>
   {
     id: 115,
     title: "E-Commerce Web Application React",
@@ -167,7 +142,36 @@ const projectsData = [
       "Mobile-Friendly",
     ],
   },
-  //   // Project 4: Search Engine (Vanilla JS)
+  // Project 2: To-Do List App (React)
+  {
+    id: 2,
+    title: "Interactive To-Do List React",
+    description:
+      "A responsive To-Do List app built with React, allowing users to manage tasks with ease with light and dark Mode.",
+    descriptionLong:
+      "This To-Do List application is built with React, providing users with a simple, intuitive interface for managing tasks. Users can add, edit, and delete tasks, with the app maintaining state and rendering changes instantly using React's state management hooks.",
+    date: "25/8/2024",
+    rate: 4.5,
+    languages: ["HTML", "CSS", "JavaScript", "React"],
+    frameWorks: "React",
+    category: "React",
+    homeImageUrl: TodoListReact,
+    imgs: [
+      TodoListReact1,
+      TodoListReact2,
+      TodoListReact3,
+      TodoListReact4,
+      TodoListReact5,
+    ],
+    links: {
+      demo: "https://react-interactive-todo.vercel.app/",
+      repo: "https://github.com/Omar-Ra7al/React-interactive-Todo.git",
+      details: "",
+    },
+    tools: ["React", "Git"],
+    features: ["Task Management", "State Management"],
+  },
+  // Project 4: Search Engine (Vanilla JS)
   {
     id: 4,
     title: "Search Engine",
@@ -194,7 +198,36 @@ const projectsData = [
       "Real-Time Results",
     ],
   },
-
+  // Next js Project
+  {
+    id: 1116,
+    title: "Next.js & TypeScript Project with Tailwind",
+    description:
+      "A well-organized web application built with Next.js, TypeScript, and Tailwind CSS for an efficient and reusable user interface.",
+    descriptionLong:
+      "This project is a modern web application leveraging Next.js for server-side rendering, TypeScript for strong typing, and Tailwind CSS for a streamlined and responsive design. The folder structure is highly organized, featuring directories for constants, reusable components, and TypeScript interfaces, ensuring maintainability and scalability. The project showcases the power of modular design by reusing components across multiple views, making development efficient and the UI consistent.",
+    date: "11/21/2024",
+    rate: 5,
+    languages: ["TypeScript", "JavaScript", "HTML", "CSS"],
+    frameWorks: "Next.js",
+    category: "Next.js",
+    homeImageUrl: ocean1, // Replace with the actual image URL
+    imgs: [ocean3, ocean4, ocean5, ocean6], // Replace with actual image URLs
+    links: {
+      demo: "https://ocean-ts-next.vercel.app/", // Replace with your live demo link
+      repo: "https://github.com/Omar-Ra7al/Ocean-Next.js", // Replace with your GitHub repo link
+      details: "",
+    },
+    tools: ["Next.js", "TypeScript", "Tailwind CSS"],
+    features: [
+      "Server-Side Rendering",
+      "Strong Typing with TypeScript",
+      "Responsive Design with Tailwind",
+      "Reusable Components",
+      "Organized Folder Structure",
+      "Modular Design",
+    ],
+  },
   // Weather App React js >>
   {
     id: 109,
@@ -222,7 +255,6 @@ const projectsData = [
       "Responsive Design",
     ],
   },
-
   // Project 5: Space Design (Vanilla JS)
   {
     id: 5,
@@ -255,7 +287,6 @@ const projectsData = [
       "Reset Options to Default",
     ],
   },
-
   // Project 6: Cruds Project
   {
     id: 6,
@@ -279,7 +310,6 @@ const projectsData = [
     tools: ["Git"],
     features: ["CRUD Functionality", "Light & Night Mode", "Responsive Design"],
   },
-
   // Project 88: Shopping Cart (Vanilla JS)
   {
     id: 88,
@@ -299,7 +329,6 @@ const projectsData = [
     tools: ["JavaScript", "Git"],
     features: ["Add/Remove Items", "Order Summary"],
   },
-
   // Project 9: Movie Club (Bootstrap)
   {
     id: 9,
@@ -384,7 +413,6 @@ const projectsData = [
     tools: ["React", "Material-UI", "Git"],
     features: ["Task Management", "Material-UI Design", "Responsive UI"],
   },
-
   // Project 11: Decoration Website (Bootstrap)
   {
     id: 11,
@@ -413,7 +441,6 @@ const projectsData = [
     tools: ["Bootstrap", "Git"],
     features: ["Responsive Design", "Clean Layout"],
   },
-
   // Project 12: Get GitHub Repos (Vanilla JS)
   {
     id: 13, // Unique ID for the Swiper project
@@ -445,16 +472,17 @@ const projectsData = [
     ],
   },
 ];
-const projectsDataContext = createContext([]);
 
-export default function ProjectsContextProvider({ children }) {
-  return (
-    <projectsDataContext.Provider value={projectsData}>
-      {children}
-    </projectsDataContext.Provider>
-  );
-}
+// const allProjectsDataContext = createContext([]);
 
-export const useProjectsData = () => {
-  return useContext(projectsDataContext);
-};
+// export default function ProjectsContextProvider({ children }) {
+//   return (
+//     <allProjectsDataContext.Provider value={allProjectsData}>
+//       {children}
+//     </allProjectsDataContext.Provider>
+//   );
+// }
+
+// export const useProjectsData = () => {
+//   return useContext(allProjectsDataContext);
+// };

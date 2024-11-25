@@ -3,7 +3,7 @@ import { useState, useMemo } from "react";
 
 // Components
 import Loader from "../../vendors/Loader/Loader";
-import { useProjectsData } from "../ProjectsContext/ProjectsProvide";
+import { allProjectsData } from "../ProjectsContext/ProjectsProvide";
 
 // Libraries
 import { motion } from "framer-motion";
@@ -26,7 +26,7 @@ export default function Projects() {
   const [category, setCategory] = useState("All");
   const [loader, setLoader] = useState(false);
 
-  const projectsData = useProjectsData();
+  const projectsData = allProjectsData;
 
   const handellCategoryName = function (language) {
     setCategory(language);
@@ -52,7 +52,11 @@ export default function Projects() {
             </div>
             <div className="project-card">
               <div className="img-wrapper">
-                <img loading="lazy" src={project.homeImageUrl} alt={project.title} />
+                <img
+                  loading="lazy"
+                  src={project.homeImageUrl}
+                  alt={project.title}
+                />
               </div>
 
               <div className="project-content">
@@ -143,6 +147,13 @@ export default function Projects() {
               handellCategoryName("React");
             }}>
             React
+          </button>
+          <button
+            className={category == "Next.js" ? "active" : ""}
+            onClick={() => {
+              handellCategoryName("Next.js");
+            }}>
+            Next.Js
           </button>
         </div>
         {/* End Projects Filter //>>*/}

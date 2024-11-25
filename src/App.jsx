@@ -16,10 +16,11 @@ import Skills from "./components/Skills/Skills";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
+import Videos from "./components/Videos/Videos";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/Navbar/Nav";
 // Projects Provider
-import ProjectsContextProvider from "./components/ProjectsContext/ProjectsProvide";
+// import ProjectsContextProvider from "./components/ProjectsContext/ProjectsProvide";
 import ThemeContextProvider from "./components/ThemeContext/ThemeContext";
 import Testimonials from "./components/Testimonials/Testimonials";
 import ContactMe from "./components/ContactMe/ContactMe";
@@ -39,41 +40,42 @@ function App() {
 
   return (
     <Router>
-      <ProjectsContextProvider>
-        <ThemeContextProvider>
-          {showLoader ? (
-            <Loader />
-          ) : (
-            <>
-              <NavBar />
-              <Routes>
-                <Route
-                  path="/"
-                  element={
-                    <div className="content">
-                      <div>
-                        <ScrollCounter />
-                        <HomeJsx />
-                        <AboutMe />
-                        <Skills />
-                        <Projects />
-                        <Testimonials />
-                        <ContactMe />
-                      </div>
+      {/* <ProjectsContextProvider> */}
+      <ThemeContextProvider>
+        {showLoader ? (
+          <Loader />
+        ) : (
+          <>
+            <NavBar />
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <div className="content">
+                    <div>
+                      <ScrollCounter />
+                      <HomeJsx />
+                      <AboutMe />
+                      <Skills />
+                      <Projects />
+                      <Videos />
+                      <Testimonials />
+                      <ContactMe />
                     </div>
-                  }
-                />
+                  </div>
+                }
+              />
 
-                <Route
-                  path="/projects/project/:projectId"
-                  element={<ProjectDetails />}
-                />
-              </Routes>
-              <Footer />
-            </>
-          )}
-        </ThemeContextProvider>
-      </ProjectsContextProvider>
+              <Route
+                path="/projects/project/:projectId"
+                element={<ProjectDetails />}
+              />
+            </Routes>
+            <Footer />
+          </>
+        )}
+      </ThemeContextProvider>
+      {/* </ProjectsContextProvider> */}
     </Router>
   );
 }
