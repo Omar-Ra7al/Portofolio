@@ -6,6 +6,8 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 50px;
+  /* for serch postion parent */
+  position: relative;
 }
 .projects-filter button {
   display: flex;

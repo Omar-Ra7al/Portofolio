@@ -22,6 +22,7 @@
 .form,
 .social {
   perspective: 2000px;
+  transform-style: preserve-3d;
   background: var(--background-color);
   width: 45%;
   padding: 30px;
@@ -50,6 +51,10 @@
 .form:hover {
   transform: rotateY(25deg) rotateX(5deg) translateZ(-30px);
   /* transform: translateY(5px) translateZ(-10px); */
+}
+.social:hover,
+.form:hover {
+  transform: none;
 }
 .form-title {
   font-size: 24px;
@@ -80,6 +85,7 @@
 }
 .form textarea {
   max-height: 200px;
+  max-width: 100%;
 }
 
 /* << Start Social Buttons */
@@ -142,3 +148,41 @@
   transform: rotateY(-1deg) rotateX(5deg) translateZ(-20px);
 }
 /* End Social Buttons //>> */
+.submit {
+  background: var(--background-color);
+  box-shadow: 2px 2px 5px var(--main-color);
+  transition: 0.3s;
+  transform: perspective(1000px) rotateY(5deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+
+  input {
+    background-color: transparent;
+    color: var(--text-color);
+    height: 100%;
+    width: 100%;
+  }
+  svg {
+    position: absolute;
+    left: calc(50% + 30px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+}
+.submit:hover {
+  box-shadow: 0px 4px 5px var(--main-color);
+  transform: perspective(1000px) rotateX(20deg) translateZ(10px);
+}
+.submit:active {
+  box-shadow: 0px 4px 5px var(--main-color);
+  transform: perspective(1000px) rotateY(10deg) rotateX(0deg) translateZ(-10px);
+  svg {
+    transform: translate(-50%, -50%) rotate(40deg);
+    left: 90%;
+  }
+}

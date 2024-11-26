@@ -20,6 +20,7 @@ import { BsCardText } from "react-icons/bs";
 
 // Assets
 import GitHub from "../../assets/imgs/GitHub.jpeg";
+import Serach from "./Serach";
 
 // Projects Data >>>>
 export default function Projects() {
@@ -36,6 +37,29 @@ export default function Projects() {
     }, 500);
   };
 
+  const categoriesJsx = useMemo(() => {
+    let categories = [];
+    projectsData.map((project) => {
+      let value = categories.some((cat) => {
+        return cat == project.category;
+      });
+      if (!value) {
+        categories.push(project.category);
+      }
+    });
+    return categories.sort().map((item, idx) => {
+      return (
+        <button
+          key={idx}
+          className={category == item ? "active" : ""}
+          onClick={() => {
+            handellCategoryName(item);
+          }}>
+          {item}
+        </button>
+      );
+    });
+  }, [category]);
   // Projects JSX >>>>
   const projectsJsx = useMemo(() => {
     return projectsData.map((project) => {
@@ -127,34 +151,10 @@ export default function Projects() {
             }}>
             All
           </button>
-          <button
-            className={category === "Css" ? "active" : ""}
-            onClick={() => {
-              handellCategoryName("Css");
-            }}>
-            Css
-          </button>
-          <button
-            className={category == "JavaScript" ? "active" : ""}
-            onClick={() => {
-              handellCategoryName("JavaScript");
-            }}>
-            JS
-          </button>
-          <button
-            className={category == "React" ? "active" : ""}
-            onClick={() => {
-              handellCategoryName("React");
-            }}>
-            React
-          </button>
-          <button
-            className={category == "Next.js" ? "active" : ""}
-            onClick={() => {
-              handellCategoryName("Next.js");
-            }}>
-            Next.Js
-          </button>
+          {/* Jsx Catrgoies */}
+          {categoriesJsx}
+
+          <Serach />
         </div>
         {/* End Projects Filter //>>*/}
 

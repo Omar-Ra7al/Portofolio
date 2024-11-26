@@ -1,6 +1,8 @@
 // Css
 import "./ContactMe.css";
-
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { BsSendFill } from "react-icons/bs";
 // React Icons
 import {
   FaGithub,
@@ -15,6 +17,27 @@ import {
 import { motion } from "framer-motion";
 
 export default function ContactMe() {
+  const form = useRef();
+  const serviceId = "service_fhmoo07";
+  const template = "template_0xtksft";
+  const key = "TvH23RZfLpSQhvFLx";
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(serviceId, template, form.current, {
+        publicKey: key,
+      })
+      .then(
+        () => {
+          alert("Your Mail Delevired!");
+        },
+        (error) => {
+          alert("FAILED...", error.text);
+        }
+      );
+    form.current.reset();
+  };
   return (
     <section id="contact" className="contact-me">
       <div className="container">
@@ -34,35 +57,41 @@ export default function ContactMe() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={{ duration: 0.8 }}
             className="form">
             <p className="form-title">Don’t hesitate to call me</p>
-            <div className="fields-wrapper">
+            <form className="fields-wrapper" ref={form} onSubmit={sendEmail}>
               <div className="feild-container">
                 <label htmlFor="name">Name</label>
                 <input
-                  id="name"
+                  name="user_name"
                   type="text"
                   placeholder="What's your name? Let's get to know each other!"
+                  required
                 />
               </div>
-
               <div className="feild-container">
                 <label htmlFor="email">Email</label>
                 <input
-                  id="email"
+                  name="user_email"
                   type="email"
                   placeholder="Drop your email, and I’ll get back to you soon!"
+                  required
                 />
               </div>
               <div className="feild-container">
                 <label htmlFor="msg">Your Msg</label>
                 <textarea
-                  name=""
-                  id="msg"
-                  placeholder="What’s on your mind? Feel free to ask or share!"></textarea>
+                  name="message"
+                  placeholder="What’s on your mind? Feel free to ask or share!"
+                  required></textarea>
               </div>
-            </div>
+
+              <div className="submit">
+                <input type="submit" value="Send" />
+                <BsSendFill />
+              </div>
+            </form>
           </motion.div>
           <motion.div
             className="social"
